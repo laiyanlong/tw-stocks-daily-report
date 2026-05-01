@@ -1,0 +1,1041 @@
+{
+  "last_updated": "2026-05-01",
+  "tickers": [
+    "2330",
+    "2454",
+    "2303",
+    "2317",
+    "2382",
+    "3008",
+    "2409",
+    "2603",
+    "2609",
+    "2618",
+    "2610",
+    "2882",
+    "2891",
+    "2002",
+    "0050",
+    "0056"
+  ],
+  "ticker_data": {
+    "2330": {
+      "symbol": "2330",
+      "name": "台積電",
+      "price_change_pct": -2.06,
+      "indicators": {
+        "latest_close": 2135.0,
+        "ma_5": 2196.0,
+        "ma_10": 2121.5,
+        "ma_20": 2042.75,
+        "ma_60": 1913.8333333333333,
+        "ma_120": null,
+        "rsi_14": 60.21234406506146,
+        "macd": {
+          "macd": 81.47665322267721,
+          "signal": 70.60461881099097,
+          "hist": 10.872034411686244
+        },
+        "kd": {
+          "k": 49.72677595628414,
+          "d": 64.35438170410846
+        },
+        "bollinger": {
+          "upper": 2283.6578225117823,
+          "mid": 2042.75,
+          "lower": 1801.8421774882177,
+          "bandwidth": 0.23586618285329322
+        },
+        "hv_20": 0.4022430922583967,
+        "volume_5d_avg": 59647495.8,
+        "volume_today": 59584011.0
+      },
+      "chip": {
+        "foreign_5d": -69713,
+        "trust_5d": 8911,
+        "dealer_5d": 35,
+        "margin_balance": 28818,
+        "short_balance": 100
+      },
+      "signals": {
+        "trend_label": "unknown",
+        "trend_reason": "資料不足",
+        "momentum_label": "bullish",
+        "momentum_reason": "RSI 60 偏強 + MACD 多頭",
+        "volume_label": "normal",
+        "volume_reason": "量能正常 (1.0x)",
+        "chip_label": "distributing",
+        "chip_reason": "法人 5 日合計賣超 60,767 張",
+        "verdict": "WATCH",
+        "verdict_reason": "訊號中性，觀望為宜"
+      }
+    },
+    "2454": {
+      "symbol": "2454",
+      "name": "聯發科",
+      "price_change_pct": 1.36,
+      "indicators": {
+        "latest_close": 2610.0,
+        "ma_5": 2534.0,
+        "ma_10": 2309.5,
+        "ma_20": 1962.5,
+        "ma_60": 1811.5833333333333,
+        "ma_120": null,
+        "rsi_14": 81.06037034608113,
+        "macd": {
+          "macd": 243.24122118089076,
+          "signal": 160.01879802989657,
+          "hist": 83.22242315099419
+        },
+        "kd": {
+          "k": 90.30389502695056,
+          "d": 89.955335129684
+        },
+        "bollinger": {
+          "upper": 2790.582757115241,
+          "mid": 1962.5,
+          "lower": 1134.4172428847592,
+          "bandwidth": 0.8439059945123474
+        },
+        "hv_20": 0.6617169474670271,
+        "volume_5d_avg": 20705401.2,
+        "volume_today": 17532158.0
+      },
+      "chip": {
+        "foreign_5d": 1608,
+        "trust_5d": 4998,
+        "dealer_5d": 24,
+        "margin_balance": 9055,
+        "short_balance": 201
+      },
+      "signals": {
+        "trend_label": "unknown",
+        "trend_reason": "資料不足",
+        "momentum_label": "overbought",
+        "momentum_reason": "RSI 81 過熱，短線可能拉回",
+        "volume_label": "normal",
+        "volume_reason": "量能正常 (0.8x)",
+        "chip_label": "accumulating",
+        "chip_reason": "法人 5 日合計買超 6,630 張",
+        "verdict": "WATCH",
+        "verdict_reason": "訊號中性，觀望為宜"
+      }
+    },
+    "2303": {
+      "symbol": "2303",
+      "name": "聯電",
+      "price_change_pct": 3.76,
+      "indicators": {
+        "latest_close": 77.3,
+        "ma_5": 74.82000000000001,
+        "ma_10": 75.24000000000001,
+        "ma_20": 67.71,
+        "ma_60": 64.03333333333333,
+        "ma_120": null,
+        "rsi_14": 66.44114150520357,
+        "macd": {
+          "macd": 4.2896729167467385,
+          "signal": 3.5574762504248327,
+          "hist": 0.7321966663219057
+        },
+        "kd": {
+          "k": 61.51209342184359,
+          "d": 63.08823196085387
+        },
+        "bollinger": {
+          "upper": 84.22970434296414,
+          "mid": 67.71,
+          "lower": 51.19029565703585,
+          "bandwidth": 0.48795464017025986
+        },
+        "hv_20": 0.6975247109461413,
+        "volume_5d_avg": 196976351.2,
+        "volume_today": 333288108.0
+      },
+      "chip": {
+        "foreign_5d": 13162,
+        "trust_5d": -17876,
+        "dealer_5d": -1065,
+        "margin_balance": 83197,
+        "short_balance": 1889
+      },
+      "signals": {
+        "trend_label": "unknown",
+        "trend_reason": "資料不足",
+        "momentum_label": "bullish",
+        "momentum_reason": "RSI 66 偏強 + MACD 多頭",
+        "volume_label": "active",
+        "volume_reason": "放量 (1.7x)",
+        "chip_label": "distributing",
+        "chip_reason": "法人 5 日合計賣超 5,779 張",
+        "verdict": "WATCH",
+        "verdict_reason": "訊號中性，觀望為宜"
+      }
+    },
+    "2317": {
+      "symbol": "2317",
+      "name": "鴻海",
+      "price_change_pct": -2.44,
+      "indicators": {
+        "latest_close": 219.5,
+        "ma_5": 223.9,
+        "ma_10": 219.0,
+        "ma_20": 209.8,
+        "ma_60": 214.21666666666667,
+        "ma_120": null,
+        "rsi_14": 56.62962834185368,
+        "macd": {
+          "macd": 4.5766304596261875,
+          "signal": 2.325335792731048,
+          "hist": 2.2512946668951397
+        },
+        "kd": {
+          "k": 64.49013614893026,
+          "d": 70.59368343058257
+        },
+        "bollinger": {
+          "upper": 232.95258312290753,
+          "mid": 209.8,
+          "lower": 186.6474168770925,
+          "bandwidth": 0.22071099259206414
+        },
+        "hv_20": 0.3651661064403368,
+        "volume_5d_avg": 81612926.0,
+        "volume_today": 73683654.0
+      },
+      "chip": {
+        "foreign_5d": 31444,
+        "trust_5d": 3533,
+        "dealer_5d": -532,
+        "margin_balance": 56342,
+        "short_balance": 489
+      },
+      "signals": {
+        "trend_label": "unknown",
+        "trend_reason": "資料不足",
+        "momentum_label": "bullish",
+        "momentum_reason": "RSI 57 偏強 + MACD 多頭",
+        "volume_label": "normal",
+        "volume_reason": "量能正常 (0.9x)",
+        "chip_label": "accumulating",
+        "chip_reason": "法人 5 日合計買超 34,445 張",
+        "verdict": "HOLD",
+        "verdict_reason": "多頭訊號優於空頭，可續抱"
+      }
+    },
+    "2382": {
+      "symbol": "2382",
+      "name": "廣達",
+      "price_change_pct": -2.95,
+      "indicators": {
+        "latest_close": 312.5,
+        "ma_5": 320.8,
+        "ma_10": 325.3,
+        "ma_20": 316.4,
+        "ma_60": 295.55,
+        "ma_120": null,
+        "rsi_14": 50.48424314711553,
+        "macd": {
+          "macd": 7.657220285064284,
+          "signal": 9.21864808301631,
+          "hist": -1.5614277979520264
+        },
+        "kd": {
+          "k": 16.26135302605891,
+          "d": 29.437601728623402
+        },
+        "bollinger": {
+          "upper": 345.43283078099637,
+          "mid": 316.4,
+          "lower": 287.3671692190036,
+          "bandwidth": 0.18351979001894048
+        },
+        "hv_20": 0.43999273312624587,
+        "volume_5d_avg": 16307205.8,
+        "volume_today": 18917525.0
+      },
+      "chip": {
+        "foreign_5d": -5953,
+        "trust_5d": -3924,
+        "dealer_5d": -1193,
+        "margin_balance": 9955,
+        "short_balance": 919
+      },
+      "signals": {
+        "trend_label": "unknown",
+        "trend_reason": "資料不足",
+        "momentum_label": "neutral",
+        "momentum_reason": "RSI 50，動能中性",
+        "volume_label": "normal",
+        "volume_reason": "量能正常 (1.2x)",
+        "chip_label": "distributing",
+        "chip_reason": "法人 5 日合計賣超 11,070 張",
+        "verdict": "WATCH",
+        "verdict_reason": "訊號中性，觀望為宜"
+      }
+    },
+    "3008": {
+      "symbol": "3008",
+      "name": "大立光",
+      "price_change_pct": -3.08,
+      "indicators": {
+        "latest_close": 2515.0,
+        "ma_5": 2565.0,
+        "ma_10": 2585.5,
+        "ma_20": 2498.25,
+        "ma_60": 2397.1666666666665,
+        "ma_120": null,
+        "rsi_14": 51.56463022468181,
+        "macd": {
+          "macd": 63.098051986895825,
+          "signal": 69.84533734860607,
+          "hist": -6.74728536171024
+        },
+        "kd": {
+          "k": 33.40173278613772,
+          "d": 33.18497941812384
+        },
+        "bollinger": {
+          "upper": 2913.4642756900853,
+          "mid": 2498.25,
+          "lower": 2083.0357243099147,
+          "bandwidth": 0.33240410342446525
+        },
+        "hv_20": 0.6320170682834318,
+        "volume_5d_avg": 1696086.8,
+        "volume_today": 1185538.0
+      },
+      "chip": {
+        "foreign_5d": 37,
+        "trust_5d": -176,
+        "dealer_5d": -30,
+        "margin_balance": 1164,
+        "short_balance": 6
+      },
+      "signals": {
+        "trend_label": "unknown",
+        "trend_reason": "資料不足",
+        "momentum_label": "neutral",
+        "momentum_reason": "RSI 52，動能中性",
+        "volume_label": "normal",
+        "volume_reason": "量能正常 (0.7x)",
+        "chip_label": "balanced",
+        "chip_reason": "法人 5 日小幅 賣超 169 張",
+        "verdict": "WATCH",
+        "verdict_reason": "訊號中性，觀望為宜"
+      }
+    },
+    "2409": {
+      "symbol": "2409",
+      "name": "友達",
+      "price_change_pct": -0.58,
+      "indicators": {
+        "latest_close": 17.2,
+        "ma_5": 17.25,
+        "ma_10": 18.055,
+        "ma_20": 18.104999999999997,
+        "ma_60": 16.243333333333332,
+        "ma_120": null,
+        "rsi_14": 48.227600893451516,
+        "macd": {
+          "macd": 0.3098928522551141,
+          "signal": 0.6061007320793826,
+          "hist": -0.29620787982426855
+        },
+        "kd": {
+          "k": 13.350042144438126,
+          "d": 11.77342223182215
+        },
+        "bollinger": {
+          "upper": 20.76382839255433,
+          "mid": 18.104999999999997,
+          "lower": 15.446171607445661,
+          "bandwidth": 0.2937120566201973
+        },
+        "hv_20": 0.7394055594131952,
+        "volume_5d_avg": 145725801.8,
+        "volume_today": 107364483.0
+      },
+      "chip": {
+        "foreign_5d": -123802,
+        "trust_5d": -34,
+        "dealer_5d": -161,
+        "margin_balance": 199133,
+        "short_balance": 18928
+      },
+      "signals": {
+        "trend_label": "unknown",
+        "trend_reason": "資料不足",
+        "momentum_label": "bearish",
+        "momentum_reason": "RSI 48 偏弱 + MACD 空頭",
+        "volume_label": "normal",
+        "volume_reason": "量能正常 (0.7x)",
+        "chip_label": "distributing",
+        "chip_reason": "法人 5 日合計賣超 123,997 張",
+        "verdict": "WATCH",
+        "verdict_reason": "空頭訊號浮現，留意停損"
+      }
+    },
+    "2603": {
+      "symbol": "2603",
+      "name": "長榮",
+      "price_change_pct": 0.25,
+      "indicators": {
+        "latest_close": 202.0,
+        "ma_5": 200.9,
+        "ma_10": 200.4,
+        "ma_20": 201.35,
+        "ma_60": 200.4,
+        "ma_120": null,
+        "rsi_14": 50.38527094686365,
+        "macd": {
+          "macd": -0.6565447907971986,
+          "signal": -0.7352412442082096,
+          "hist": 0.07869645341101095
+        },
+        "kd": {
+          "k": 60.784313725490186,
+          "d": 54.24836601307189
+        },
+        "bollinger": {
+          "upper": 204.89074033293576,
+          "mid": 201.35,
+          "lower": 197.80925966706423,
+          "bandwidth": 0.03517000579027323
+        },
+        "hv_20": 0.16856039510421073,
+        "volume_5d_avg": 7861603.0,
+        "volume_today": 6460050.0
+      },
+      "chip": {
+        "foreign_5d": 6625,
+        "trust_5d": -1584,
+        "dealer_5d": -24,
+        "margin_balance": 14218,
+        "short_balance": 19
+      },
+      "signals": {
+        "trend_label": "unknown",
+        "trend_reason": "資料不足",
+        "momentum_label": "bullish",
+        "momentum_reason": "RSI 50 偏強 + MACD 多頭",
+        "volume_label": "normal",
+        "volume_reason": "量能正常 (0.8x)",
+        "chip_label": "accumulating",
+        "chip_reason": "法人 5 日合計買超 5,017 張",
+        "verdict": "HOLD",
+        "verdict_reason": "多頭訊號優於空頭，可續抱"
+      }
+    },
+    "2609": {
+      "symbol": "2609",
+      "name": "陽明",
+      "price_change_pct": -0.41,
+      "indicators": {
+        "latest_close": 49.15,
+        "ma_5": 49.489999999999995,
+        "ma_10": 49.955,
+        "ma_20": 50.6925,
+        "ma_60": 54.280833333333334,
+        "ma_120": null,
+        "rsi_14": 32.861411036097735,
+        "macd": {
+          "macd": -1.3576405997290735,
+          "signal": -1.396243454288879,
+          "hist": 0.03860285455980561
+        },
+        "kd": {
+          "k": 9.941520467836343,
+          "d": 11.087440824283009
+        },
+        "bollinger": {
+          "upper": 52.645439754373136,
+          "mid": 50.6925,
+          "lower": 48.73956024562687,
+          "bandwidth": 0.07705044155932876
+        },
+        "hv_20": 0.14998593939648114,
+        "volume_5d_avg": 14711407.4,
+        "volume_today": 11508316.0
+      },
+      "chip": {
+        "foreign_5d": -7639,
+        "trust_5d": -477,
+        "dealer_5d": -952,
+        "margin_balance": 35725,
+        "short_balance": 126
+      },
+      "signals": {
+        "trend_label": "unknown",
+        "trend_reason": "資料不足",
+        "momentum_label": "neutral",
+        "momentum_reason": "RSI 33，動能中性",
+        "volume_label": "normal",
+        "volume_reason": "量能正常 (0.8x)",
+        "chip_label": "distributing",
+        "chip_reason": "法人 5 日合計賣超 9,068 張",
+        "verdict": "WATCH",
+        "verdict_reason": "訊號中性，觀望為宜"
+      }
+    },
+    "2618": {
+      "symbol": "2618",
+      "name": "長榮航",
+      "price_change_pct": -1.47,
+      "indicators": {
+        "latest_close": 33.5,
+        "ma_5": 33.59,
+        "ma_10": 34.265,
+        "ma_20": 34.61,
+        "ma_60": 35.69333333333334,
+        "ma_120": null,
+        "rsi_14": 39.16622390199828,
+        "macd": {
+          "macd": -0.4264988854273568,
+          "signal": -0.30135297168293407,
+          "hist": -0.12514591374442274
+        },
+        "kd": {
+          "k": 18.11594202898542,
+          "d": 13.941533506750849
+        },
+        "bollinger": {
+          "upper": 36.02926593331671,
+          "mid": 34.61,
+          "lower": 33.19073406668329,
+          "bandwidth": 0.08201478955889673
+        },
+        "hv_20": 0.237715868817504,
+        "volume_5d_avg": 24573425.8,
+        "volume_today": 26150659.0
+      },
+      "chip": {
+        "foreign_5d": -25935,
+        "trust_5d": 7495,
+        "dealer_5d": -7,
+        "margin_balance": 44052,
+        "short_balance": 230
+      },
+      "signals": {
+        "trend_label": "unknown",
+        "trend_reason": "資料不足",
+        "momentum_label": "bearish",
+        "momentum_reason": "RSI 39 偏弱 + MACD 空頭",
+        "volume_label": "normal",
+        "volume_reason": "量能正常 (1.1x)",
+        "chip_label": "distributing",
+        "chip_reason": "法人 5 日合計賣超 18,447 張",
+        "verdict": "WATCH",
+        "verdict_reason": "空頭訊號浮現，留意停損"
+      }
+    },
+    "2610": {
+      "symbol": "2610",
+      "name": "華航",
+      "price_change_pct": -1.38,
+      "indicators": {
+        "latest_close": 17.9,
+        "ma_5": 17.95,
+        "ma_10": 18.04,
+        "ma_20": 18.15,
+        "ma_60": 19.6075,
+        "ma_120": null,
+        "rsi_14": 39.86051474343998,
+        "macd": {
+          "macd": -0.2749685642539319,
+          "signal": -0.3219160305703286,
+          "hist": 0.04694746631639668
+        },
+        "kd": {
+          "k": 45.811965811965784,
+          "d": 36.125356125356205
+        },
+        "bollinger": {
+          "upper": 18.524165738677713,
+          "mid": 18.15,
+          "lower": 17.775834261322284,
+          "bandwidth": 0.0412303844272962
+        },
+        "hv_20": 0.18510450249276422,
+        "volume_5d_avg": 21740641.0,
+        "volume_today": 21412281.0
+      },
+      "chip": {
+        "foreign_5d": -30445,
+        "trust_5d": -38,
+        "dealer_5d": -306,
+        "margin_balance": 51285,
+        "short_balance": 483
+      },
+      "signals": {
+        "trend_label": "unknown",
+        "trend_reason": "資料不足",
+        "momentum_label": "neutral",
+        "momentum_reason": "RSI 40，動能中性",
+        "volume_label": "normal",
+        "volume_reason": "量能正常 (1.0x)",
+        "chip_label": "distributing",
+        "chip_reason": "法人 5 日合計賣超 30,789 張",
+        "verdict": "WATCH",
+        "verdict_reason": "訊號中性，觀望為宜"
+      }
+    },
+    "2882": {
+      "symbol": "2882",
+      "name": "國泰金",
+      "price_change_pct": -1.78,
+      "indicators": {
+        "latest_close": 77.2,
+        "ma_5": 75.98,
+        "ma_10": 75.57000000000001,
+        "ma_20": 74.16999999999999,
+        "ma_60": 74.28,
+        "ma_120": null,
+        "rsi_14": 61.998168541049836,
+        "macd": {
+          "macd": 0.977139818588725,
+          "signal": 0.5612828783214454,
+          "hist": 0.4158569402672796
+        },
+        "kd": {
+          "k": 67.72178013557324,
+          "d": 67.02311949438388
+        },
+        "bollinger": {
+          "upper": 77.78988659316438,
+          "mid": 74.16999999999999,
+          "lower": 70.55011340683559,
+          "bandwidth": 0.09761053237601158
+        },
+        "hv_20": 0.2548773599932908,
+        "volume_5d_avg": 36172261.4,
+        "volume_today": 29476709.0
+      },
+      "chip": {
+        "foreign_5d": 30673,
+        "trust_5d": -26603,
+        "dealer_5d": 315,
+        "margin_balance": 3786,
+        "short_balance": 122
+      },
+      "signals": {
+        "trend_label": "unknown",
+        "trend_reason": "資料不足",
+        "momentum_label": "bullish",
+        "momentum_reason": "RSI 62 偏強 + MACD 多頭",
+        "volume_label": "normal",
+        "volume_reason": "量能正常 (0.8x)",
+        "chip_label": "balanced",
+        "chip_reason": "法人 5 日小幅 買超 4,385 張",
+        "verdict": "WATCH",
+        "verdict_reason": "訊號中性，觀望為宜"
+      }
+    },
+    "2891": {
+      "symbol": "2891",
+      "name": "中信金",
+      "price_change_pct": -1.51,
+      "indicators": {
+        "latest_close": 52.3,
+        "ma_5": 52.86,
+        "ma_10": 52.970000000000006,
+        "ma_20": 53.58,
+        "ma_60": 52.525,
+        "ma_120": null,
+        "rsi_14": 45.240697438779485,
+        "macd": {
+          "macd": 0.008662735928794518,
+          "signal": 0.1626095630563995,
+          "hist": -0.153946827127605
+        },
+        "kd": {
+          "k": 31.111111111111086,
+          "d": 32.098765432098766
+        },
+        "bollinger": {
+          "upper": 55.71699247591204,
+          "mid": 53.58,
+          "lower": 51.44300752408795,
+          "bandwidth": 0.07976828950772853
+        },
+        "hv_20": 0.26381079835771365,
+        "volume_5d_avg": 46217786.6,
+        "volume_today": 52055563.0
+      },
+      "chip": {
+        "foreign_5d": 22060,
+        "trust_5d": -50368,
+        "dealer_5d": -402,
+        "margin_balance": 3954,
+        "short_balance": 157
+      },
+      "signals": {
+        "trend_label": "unknown",
+        "trend_reason": "資料不足",
+        "momentum_label": "bearish",
+        "momentum_reason": "RSI 45 偏弱 + MACD 空頭",
+        "volume_label": "normal",
+        "volume_reason": "量能正常 (1.1x)",
+        "chip_label": "distributing",
+        "chip_reason": "法人 5 日合計賣超 28,710 張",
+        "verdict": "WATCH",
+        "verdict_reason": "空頭訊號浮現，留意停損"
+      }
+    },
+    "2002": {
+      "symbol": "2002",
+      "name": "中鋼",
+      "price_change_pct": -1.32,
+      "indicators": {
+        "latest_close": 18.75,
+        "ma_5": 18.85,
+        "ma_10": 19.265,
+        "ma_20": 19.605,
+        "ma_60": 19.769166666666667,
+        "ma_120": null,
+        "rsi_14": 38.647726095046764,
+        "macd": {
+          "macd": -0.20929601210604432,
+          "signal": -0.07990714289882903,
+          "hist": -0.1293888692072153
+        },
+        "kd": {
+          "k": 8.602150537634449,
+          "d": 7.008768299090929
+        },
+        "bollinger": {
+          "upper": 20.698954680096605,
+          "mid": 19.605,
+          "lower": 18.511045319903396,
+          "bandwidth": 0.11159955930595306
+        },
+        "hv_20": 0.2238885828277015,
+        "volume_5d_avg": 48830440.6,
+        "volume_today": 40997251.0
+      },
+      "chip": {
+        "foreign_5d": -144500,
+        "trust_5d": -349,
+        "dealer_5d": -351,
+        "margin_balance": 36161,
+        "short_balance": 418
+      },
+      "signals": {
+        "trend_label": "unknown",
+        "trend_reason": "資料不足",
+        "momentum_label": "bearish",
+        "momentum_reason": "RSI 39 偏弱 + MACD 空頭",
+        "volume_label": "normal",
+        "volume_reason": "量能正常 (0.8x)",
+        "chip_label": "distributing",
+        "chip_reason": "法人 5 日合計賣超 145,200 張",
+        "verdict": "WATCH",
+        "verdict_reason": "空頭訊號浮現，留意停損"
+      }
+    },
+    "0050": {
+      "symbol": "0050",
+      "name": "元大台灣50",
+      "price_change_pct": -0.28,
+      "indicators": {
+        "latest_close": 90.5,
+        "ma_5": 91.24000000000001,
+        "ma_10": 88.36,
+        "ma_20": 84.0125,
+        "ma_60": 78.29416666666665,
+        "ma_120": null,
+        "rsi_14": 70.34175807429952,
+        "macd": {
+          "macd": 3.871059978971701,
+          "signal": 3.215779203759683,
+          "hist": 0.655280775212018
+        },
+        "kd": {
+          "k": 68.54571096731377,
+          "d": 78.18498971534
+        },
+        "bollinger": {
+          "upper": 95.28794490894897,
+          "mid": 84.0125,
+          "lower": 72.73705509105103,
+          "bandwidth": 0.2684230301193031
+        },
+        "hv_20": 0.31858757734060755,
+        "volume_5d_avg": 128246129.0,
+        "volume_today": 89209769.0
+      },
+      "chip": {
+        "foreign_5d": -84072,
+        "trust_5d": 2725,
+        "dealer_5d": -290,
+        "margin_balance": 9569,
+        "short_balance": 1498
+      },
+      "signals": {
+        "trend_label": "unknown",
+        "trend_reason": "資料不足",
+        "momentum_label": "overbought",
+        "momentum_reason": "RSI 70 過熱，短線可能拉回",
+        "volume_label": "normal",
+        "volume_reason": "量能正常 (0.7x)",
+        "chip_label": "distributing",
+        "chip_reason": "法人 5 日合計賣超 81,637 張",
+        "verdict": "WATCH",
+        "verdict_reason": "空頭訊號浮現，留意停損"
+      }
+    },
+    "0056": {
+      "symbol": "0056",
+      "name": "元大高股息",
+      "price_change_pct": -0.07,
+      "indicators": {
+        "latest_close": 40.9,
+        "ma_5": 40.958,
+        "ma_10": 41.247,
+        "ma_20": 40.226,
+        "ma_60": 39.03333333333333,
+        "ma_120": null,
+        "rsi_14": 57.4457499461612,
+        "macd": {
+          "macd": 0.6580337965079011,
+          "signal": 0.6728319121614119,
+          "hist": -0.014798115653510857
+        },
+        "kd": {
+          "k": 32.36514522821566,
+          "d": 33.4035793620855
+        },
+        "bollinger": {
+          "upper": 42.86070281955445,
+          "mid": 40.226,
+          "lower": 37.59129718044555,
+          "bandwidth": 0.13099501911969616
+        },
+        "hv_20": 0.23643259515157733,
+        "volume_5d_avg": 76530864.4,
+        "volume_today": 46787938.0
+      },
+      "chip": {
+        "foreign_5d": 37690,
+        "trust_5d": -33785,
+        "dealer_5d": 662,
+        "margin_balance": 4820,
+        "short_balance": 93
+      },
+      "signals": {
+        "trend_label": "unknown",
+        "trend_reason": "資料不足",
+        "momentum_label": "neutral",
+        "momentum_reason": "RSI 57，動能中性",
+        "volume_label": "normal",
+        "volume_reason": "量能正常 (0.6x)",
+        "chip_label": "balanced",
+        "chip_reason": "法人 5 日小幅 買超 4,567 張",
+        "verdict": "WATCH",
+        "verdict_reason": "訊號中性，觀望為宜"
+      }
+    }
+  },
+  "sector_rotation": {
+    "半導體": {
+      "tickers": [
+        "2330",
+        "2454",
+        "2303"
+      ],
+      "avg_change_pct": 1.02,
+      "top_gainer": {
+        "ticker": "2303",
+        "name": "聯電",
+        "change_pct": 3.76
+      },
+      "top_loser": {
+        "ticker": "2330",
+        "name": "台積電",
+        "change_pct": -2.06
+      },
+      "avg_rsi": 69.2,
+      "foreign_net_5d_total": -54943,
+      "verdict": "WARM",
+      "verdict_reason": "今日均漲 +1.0%；RSI 69 偏強；外資 5 日累計賣超 54,943 張"
+    },
+    "電子代工": {
+      "tickers": [
+        "2317",
+        "2382"
+      ],
+      "avg_change_pct": -2.7,
+      "top_gainer": {
+        "ticker": "2317",
+        "name": "鴻海",
+        "change_pct": -2.44
+      },
+      "top_loser": {
+        "ticker": "2382",
+        "name": "廣達",
+        "change_pct": -2.95
+      },
+      "avg_rsi": 53.6,
+      "foreign_net_5d_total": 25491,
+      "verdict": "COOL",
+      "verdict_reason": "今日均跌 -2.7%；外資 5 日累計買超 25,491 張"
+    },
+    "光電": {
+      "tickers": [
+        "3008",
+        "2409"
+      ],
+      "avg_change_pct": -1.83,
+      "top_gainer": {
+        "ticker": "2409",
+        "name": "友達",
+        "change_pct": -0.58
+      },
+      "top_loser": {
+        "ticker": "3008",
+        "name": "大立光",
+        "change_pct": -3.08
+      },
+      "avg_rsi": 49.9,
+      "foreign_net_5d_total": -123765,
+      "verdict": "COOL",
+      "verdict_reason": "今日均跌 -1.8%；外資 5 日累計賣超 123,765 張"
+    },
+    "航運": {
+      "tickers": [
+        "2603",
+        "2609"
+      ],
+      "avg_change_pct": -0.08,
+      "top_gainer": {
+        "ticker": "2603",
+        "name": "長榮",
+        "change_pct": 0.25
+      },
+      "top_loser": {
+        "ticker": "2609",
+        "name": "陽明",
+        "change_pct": -0.41
+      },
+      "avg_rsi": 41.6,
+      "foreign_net_5d_total": -1014,
+      "verdict": "NEUTRAL",
+      "verdict_reason": "中性"
+    },
+    "航空": {
+      "tickers": [
+        "2618",
+        "2610"
+      ],
+      "avg_change_pct": -1.42,
+      "top_gainer": {
+        "ticker": "2610",
+        "name": "華航",
+        "change_pct": -1.38
+      },
+      "top_loser": {
+        "ticker": "2618",
+        "name": "長榮航",
+        "change_pct": -1.47
+      },
+      "avg_rsi": 39.5,
+      "foreign_net_5d_total": -56380,
+      "verdict": "COOL",
+      "verdict_reason": "今日均跌 -1.4%；外資 5 日累計賣超 56,380 張"
+    },
+    "金融": {
+      "tickers": [
+        "2882",
+        "2891"
+      ],
+      "avg_change_pct": -1.65,
+      "top_gainer": {
+        "ticker": "2891",
+        "name": "中信金",
+        "change_pct": -1.51
+      },
+      "top_loser": {
+        "ticker": "2882",
+        "name": "國泰金",
+        "change_pct": -1.78
+      },
+      "avg_rsi": 53.6,
+      "foreign_net_5d_total": 52733,
+      "verdict": "NEUTRAL",
+      "verdict_reason": "今日均跌 -1.6%；外資 5 日累計買超 52,733 張"
+    },
+    "鋼鐵": {
+      "tickers": [
+        "2002"
+      ],
+      "avg_change_pct": -1.32,
+      "top_gainer": {
+        "ticker": "2002",
+        "name": "中鋼",
+        "change_pct": -1.32
+      },
+      "top_loser": {
+        "ticker": "2002",
+        "name": "中鋼",
+        "change_pct": -1.32
+      },
+      "avg_rsi": 38.6,
+      "foreign_net_5d_total": -144500,
+      "verdict": "COOL",
+      "verdict_reason": "今日均跌 -1.3%；外資 5 日累計賣超 144,500 張"
+    },
+    "ETF": {
+      "tickers": [
+        "0050",
+        "0056"
+      ],
+      "avg_change_pct": -0.18,
+      "top_gainer": {
+        "ticker": "0056",
+        "name": "元大高股息",
+        "change_pct": -0.07
+      },
+      "top_loser": {
+        "ticker": "0050",
+        "name": "元大台灣50",
+        "change_pct": -0.28
+      },
+      "avg_rsi": 63.9,
+      "foreign_net_5d_total": -46382,
+      "verdict": "COOL",
+      "verdict_reason": "外資 5 日累計賣超 46,382 張"
+    }
+  },
+  "sector_correlation": [
+    {
+      "sector_a": "ETF",
+      "sector_b": "電子代工",
+      "correlation": 0.82,
+      "direction": "同向"
+    },
+    {
+      "sector_a": "半導體",
+      "sector_b": "ETF",
+      "correlation": 0.81,
+      "direction": "同向"
+    },
+    {
+      "sector_a": "金融",
+      "sector_b": "航空",
+      "correlation": 0.79,
+      "direction": "同向"
+    },
+    {
+      "sector_a": "鋼鐵",
+      "sector_b": "航空",
+      "correlation": 0.66,
+      "direction": "同向"
+    },
+    {
+      "sector_a": "ETF",
+      "sector_b": "航空",
+      "correlation": 0.66,
+      "direction": "同向"
+    }
+  ]
+}
