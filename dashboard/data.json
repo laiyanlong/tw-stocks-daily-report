@@ -29,12 +29,14 @@
         "ma_10": 2121.5,
         "ma_20": 2042.75,
         "ma_60": 1913.8333333333333,
-        "ma_120": null,
-        "rsi_14": 60.21234406506146,
+        "ma_120": 1718.0833333333333,
+        "ma_200": null,
+        "ma_200_slope": null,
+        "rsi_14": 60.21447348880062,
         "macd": {
-          "macd": 81.47665322267721,
-          "signal": 70.60461881099097,
-          "hist": 10.872034411686244
+          "macd": 81.4879923792596,
+          "signal": 70.62129374666375,
+          "hist": 10.866698632595842
         },
         "kd": {
           "k": 49.72677595628414,
@@ -44,9 +46,9 @@
           "upper": 2283.6578225117823,
           "mid": 2042.75,
           "lower": 1801.8421774882177,
-          "bandwidth": 0.23586618285329322
+          "bandwidth": 0.2358661828532931
         },
-        "hv_20": 0.4022430922583967,
+        "hv_20": 0.40224309225839666,
         "volume_5d_avg": 59647495.8,
         "volume_today": 59584011.0
       },
@@ -57,9 +59,108 @@
         "margin_balance": 28818,
         "short_balance": 100
       },
+      "news": [
+        {
+          "title": "10大外資忙著上修台積電目標價！最高上看2875元 - 自由財經",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5406683",
+          "source": "自由財經",
+          "date": "2026-04-17",
+          "summary": ""
+        },
+        {
+          "title": "2330 台積電 - 油道是/30小時河東30小時河西/由來只有新人笑不見舊人哭- 股市爆料同學會 - CMoney",
+          "url": "https://www.cmoney.tw/forum/article/178241313",
+          "source": "CMoney",
+          "date": "2026-04-17",
+          "summary": ""
+        },
+        {
+          "title": "2330 台積電 - 加權今日收黑視為第四浪，夜盤受美伊和談影響大漲可能還有高點- 股市爆料同學會 - CMoney",
+          "url": "https://www.cmoney.tw/forum/article/178241484",
+          "source": "CMoney",
+          "date": "2026-04-17",
+          "summary": ""
+        },
+        {
+          "title": "快訊／台積電法說失靈！下挫30元至2055　台股下跌逾240點 - ETtoday財經雲",
+          "url": "https://finance.ettoday.net/news/3150734",
+          "source": "ETtoday財經雲",
+          "date": "2026-04-17",
+          "summary": ""
+        },
+        {
+          "title": "利多不漲？ 台積電跌40元 「二哥」卯起來又衝了 台股下跌224點 - 東森電視",
+          "url": "https://fnc.ebc.net.tw/fncnews/stock/209306",
+          "source": "東森電視",
+          "date": "2026-04-17",
+          "summary": ""
+        }
+      ],
+      "announcements": [
+        {
+          "title": "快訊／台積電法說失靈！下挫30元至2055　台股下跌逾240點 - ETtoday財經雲",
+          "url": "https://finance.ettoday.net/news/3150734",
+          "date": "2026-04-17",
+          "type": "法說會"
+        },
+        {
+          "title": "台積電法說會失靈！股價跌40元至2045元 名師最新解析 - Yahoo股市",
+          "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E7%A9%8D%E9%9B%BB%E6%B3%95%E8%AA%AA%E6%9C%83%E5%A4%B1%E9%9D%88%EF%BC%81%E8%82%A1%E5%83%B9%E8%B7%8C40%E5%85%83%E8%87%B32045%E5%85%83-%E5%90%8D%E5%B8%AB%E6%9C%80%E6%96%B0%E8%A7%A3%E6%9E%90-010132534.html",
+          "date": "2026-04-17",
+          "type": "法說會"
+        },
+        {
+          "title": "「積」情過了？台積電法說會超預期 獲外資急修目標價2875元 - Yahoo股市",
+          "url": "https://tw.stock.yahoo.com/news/%E7%A9%8D-%E6%83%85%E9%81%8E%E4%BA%86-%E5%8F%B0%E7%A9%8D%E9%9B%BB%E6%B3%95%E8%AA%AA%E6%9C%83%E8%B6%85%E9%A0%90%E6%9C%9F-%E7%8D%B2%E5%A4%96%E8%B3%87%E6%80%A5%E4%BF%AE%E7%9B%AE%E6%A8%99%E5%83%B92875%E5%85%83-022500313.html",
+          "date": "2026-04-17",
+          "type": "法說會"
+        },
+        {
+          "title": "誰是全球半導體二哥？台積電法說會後市值遭博通超車 - Yahoo股市",
+          "url": "https://tw.stock.yahoo.com/news/%E8%AA%B0%E6%98%AF%E5%85%A8%E7%90%83%E5%8D%8A%E5%B0%8E%E9%AB%94%E4%BA%8C%E5%93%A5%EF%BC%9F%E5%8F%B0%E7%A9%8D%E9%9B%BB%E6%B3%95%E8%AA%AA%E6%9C%83%E5%BE%8C%E5%B8%82%E5%80%BC%E9%81%AD%E5%8D%9A%E9%80%9A%E8%B6%85%E8%BB%8A-032415714.html",
+          "date": "2026-04-17",
+          "type": "法說會"
+        },
+        {
+          "title": "台積電法說交出超狂財報，為何股價反跌？台股老手3大原因揭「利多出盡」真相：跌到「這價位」閉眼撿 - 今周刊",
+          "url": "https://www.businesstoday.com.tw/article/category/183008/post/202604170005/",
+          "date": "2026-04-17",
+          "type": "法說會"
+        },
+        {
+          "title": "【即時新聞】台積電(2330)法說報喜引爆行情，這「6檔概念股」接棒狂飆？ - CMoney投資網誌",
+          "url": "https://cmnews.com.tw/article/newsyoudeservetoknow-33ac804e-3a10-11f1-b3d8-a9648148594d",
+          "date": "2026-04-17",
+          "type": "法說會"
+        },
+        {
+          "title": "【即時新聞】台積電(2330)法說報喜引爆多頭，這「5檔概念股」爆量接棒狂飆！ - CMoney投資網誌",
+          "url": "https://cmnews.com.tw/article/newsyoudeservetoknow-9c6683ee-3a13-11f1-8d1b-b7d9254148c6",
+          "date": "2026-04-17",
+          "type": "法說會"
+        },
+        {
+          "title": "台積電法說會失靈！尾盤賣單狙擊跌55元收2030元 名師續看多 - Yahoo股市",
+          "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E7%A9%8D%E9%9B%BB%E6%B3%95%E8%AA%AA%E6%9C%83%E5%A4%B1%E9%9D%88%EF%BC%81%E5%B0%BE%E7%9B%A4%E8%B3%A3%E5%96%AE%E7%8B%99%E6%93%8A%E8%B7%8C55%E5%85%83%E6%94%B62030%E5%85%83-%E5%90%8D%E5%B8%AB%E7%BA%8C%E7%9C%8B%E5%A4%9A-010132614.html",
+          "date": "2026-04-17",
+          "type": "法說會"
+        },
+        {
+          "title": "台股收跌327點失守3萬7 台積電法說後下殺55元收2030 - Yahoo新聞",
+          "url": "https://tw.news.yahoo.com/%E5%8F%B0%E8%82%A1%E6%94%B6%E8%B7%8C327%E9%BB%9E%E5%A4%B1%E5%AE%883%E8%90%AC7-%E5%8F%B0%E7%A9%8D%E9%9B%BB%E6%B3%95%E8%AA%AA%E5%BE%8C%E4%B8%8B%E6%AE%BA55%E5%85%83%E6%94%B62030-054449021.html",
+          "date": "2026-04-17",
+          "type": "法說會"
+        },
+        {
+          "title": "台積電法說會後震盪拉回，櫃買逆勢強漲，中小型股接棒表態！ - 優分析UAnalyze",
+          "url": "https://uanalyze.com.tw/articles/7523350835",
+          "date": "2026-04-17",
+          "type": "法說會"
+        }
+      ],
       "signals": {
-        "trend_label": "unknown",
-        "trend_reason": "資料不足",
+        "trend_label": "strong_up",
+        "trend_reason": "多頭排列：價格 > MA20 > MA60 > MA120",
         "momentum_label": "bullish",
         "momentum_reason": "RSI 60 偏強 + MACD 多頭",
         "volume_label": "normal",
@@ -490,7 +591,8 @@
           "low": 2135.0,
           "volume": 59584011
         }
-      ]
+      ],
+      "news_commentary": "外資雖大幅上修台積電目標價，但法說會表現不如預期，導致股價下跌並拖累大盤。整體情緒呈短期偏空，投資人應關注市場消化利空後續走向。"
     },
     "2454": {
       "symbol": "2454",
@@ -502,24 +604,26 @@
         "ma_10": 2309.5,
         "ma_20": 1962.5,
         "ma_60": 1811.5833333333333,
-        "ma_120": null,
-        "rsi_14": 81.06037034608113,
+        "ma_120": 1590.75,
+        "ma_200": null,
+        "ma_200_slope": null,
+        "rsi_14": 81.05800847144685,
         "macd": {
-          "macd": 243.24122118089076,
-          "signal": 160.01879802989657,
-          "hist": 83.22242315099419
+          "macd": 243.2367795833918,
+          "signal": 160.0122663685308,
+          "hist": 83.22451321486102
         },
         "kd": {
           "k": 90.30389502695056,
-          "d": 89.955335129684
+          "d": 89.95533512968399
         },
         "bollinger": {
-          "upper": 2790.582757115241,
+          "upper": 2790.5827571152413,
           "mid": 1962.5,
-          "lower": 1134.4172428847592,
-          "bandwidth": 0.8439059945123474
+          "lower": 1134.4172428847585,
+          "bandwidth": 0.843905994512348
         },
-        "hv_20": 0.6617169474670271,
+        "hv_20": 0.661716947467027,
         "volume_5d_avg": 20705401.2,
         "volume_today": 17532158.0
       },
@@ -530,9 +634,47 @@
         "margin_balance": 9055,
         "short_balance": 201
       },
+      "news": [
+        {
+          "title": "焦點股》聯發科：AI ASIC貢獻優於預期 外資上修目標價至2454元 - 自由財經",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5406722",
+          "source": "自由財經",
+          "date": "2026-04-17",
+          "summary": ""
+        },
+        {
+          "title": "高盛看好聯發科 AI ASIC 業務成長潛力，給予目標價大增至 2,454 元 - TechNews 科技新報",
+          "url": "https://finance.technews.tw/2026/04/17/goldman-sachs-is-optimistic-about-the-growth-potential-of-mediateks-ai-asic-business/",
+          "source": "TechNews 科技新報",
+          "date": "2026-04-17",
+          "summary": ""
+        },
+        {
+          "title": "《半導體》外資喊買聯發科！目標價上看2454元、AI ASIC成最大底氣- 上市櫃 - 旺得富理財網",
+          "url": "https://wantrich.chinatimes.com/news/20260417900389-420101",
+          "source": "旺得富理財網",
+          "date": "2026-04-17",
+          "summary": ""
+        },
+        {
+          "title": "看好AI ASIC成長動能！聯發科獲高盛肯定 目標價喊上2454元 - Yahoo股市",
+          "url": "https://tw.stock.yahoo.com/news/%E7%9C%8B%E5%A5%BDai-asic%E6%88%90%E9%95%B7%E5%8B%95%E8%83%BD-%E8%81%AF%E7%99%BC%E7%A7%91%E7%8D%B2%E9%AB%98%E7%9B%9B%E8%82%AF%E5%AE%9A-%E7%9B%AE%E6%A8%99%E5%83%B9%E5%96%8A%E4%B8%8A2454%E5%85%83-045500420.html",
+          "source": "Yahoo股市",
+          "date": "2026-04-17",
+          "summary": ""
+        },
+        {
+          "title": "聯發科短線暴漲近3成！專家揭關鍵 ASIC撐盤動能強、有望挑戰2字頭 - Yahoo新聞",
+          "url": "https://tw.news.yahoo.com/%E8%81%AF%E7%99%BC%E7%A7%91%E7%9F%AD%E7%B7%9A%E6%9A%B4%E6%BC%B2%E8%BF%913%E6%88%90-%E5%B0%88%E5%AE%B6%E6%8F%AD%E9%97%9C%E9%8D%B5-asic%E6%92%90%E7%9B%A4%E5%8B%95%E8%83%BD%E5%BC%B7-%E6%9C%89%E6%9C%9B%E6%8C%91%E6%88%B02%E5%AD%97%E9%A0%AD-010000828.html",
+          "source": "Yahoo新聞",
+          "date": "2026-04-17",
+          "summary": ""
+        }
+      ],
+      "announcements": [],
       "signals": {
-        "trend_label": "unknown",
-        "trend_reason": "資料不足",
+        "trend_label": "strong_up",
+        "trend_reason": "多頭排列：價格 > MA20 > MA60 > MA120",
         "momentum_label": "overbought",
         "momentum_reason": "RSI 81 過熱，短線可能拉回",
         "volume_label": "normal",
@@ -975,22 +1117,24 @@
         "ma_10": 75.24000000000001,
         "ma_20": 67.71,
         "ma_60": 64.03333333333333,
-        "ma_120": null,
-        "rsi_14": 66.44114150520357,
+        "ma_120": 56.849583333333335,
+        "ma_200": null,
+        "ma_200_slope": null,
+        "rsi_14": 66.44245695459051,
         "macd": {
-          "macd": 4.2896729167467385,
-          "signal": 3.5574762504248327,
-          "hist": 0.7321966663219057
+          "macd": 4.290012186384658,
+          "signal": 3.557975161276317,
+          "hist": 0.7320370251083408
         },
         "kd": {
-          "k": 61.51209342184359,
-          "d": 63.08823196085387
+          "k": 61.512093421843595,
+          "d": 63.088231960853896
         },
         "bollinger": {
-          "upper": 84.22970434296414,
+          "upper": 84.22970434296428,
           "mid": 67.71,
-          "lower": 51.19029565703585,
-          "bandwidth": 0.48795464017025986
+          "lower": 51.190295657035705,
+          "bandwidth": 0.4879546401702641
         },
         "hv_20": 0.6975247109461413,
         "volume_5d_avg": 196976351.2,
@@ -1003,9 +1147,54 @@
         "margin_balance": 83197,
         "short_balance": 1889
       },
+      "news": [
+        {
+          "title": "2303 聯電 - 股市最新爆料，掌握股友們對眾個股股價、技術分析、新聞的第一手... - 股市爆料同學會 - CMoney",
+          "url": "https://www.cmoney.tw/forum/article/178241766",
+          "source": "CMoney",
+          "date": "2026-04-17",
+          "summary": ""
+        },
+        {
+          "title": "聯電(2303) 今日股價與討論 - 股市爆料同學會 - CMoney",
+          "url": "https://www.cmoney.tw/forum/stock/2303",
+          "source": "CMoney",
+          "date": "2026-04-17",
+          "summary": ""
+        },
+        {
+          "title": "【即時新聞】近日聯電股價爆量亮燈漲停，法人狂掃近5萬張還能追嗎？ - CMoney投資網誌",
+          "url": "https://cmnews.com.tw/article/newsyoudeservetoknow-67901560-3a05-11f1-a1e7-23ab34c769ce",
+          "source": "CMoney投資網誌",
+          "date": "2026-04-17",
+          "summary": ""
+        },
+        {
+          "title": "2303 聯電 - 飆倍股的態勢- 股市爆料同學會 - CMoney",
+          "url": "https://www.cmoney.tw/forum/article/178242354",
+          "source": "CMoney",
+          "date": "2026-04-17",
+          "summary": ""
+        },
+        {
+          "title": "聯電股價狂飆逾7%！傳接記憶體代工訂單＋代工調漲預期，ADR帶頭衝 | 下班經濟學 | 財經 - 風傳媒",
+          "url": "https://www.storm.mg/article/11122179",
+          "source": "風傳媒",
+          "date": "2026-04-17",
+          "summary": ""
+        }
+      ],
+      "announcements": [
+        {
+          "title": "聯電下半年漲價 營運吃補 29日召開法說會 - 經濟日報",
+          "url": "https://money.udn.com/money/story/5612/9449028",
+          "date": "2026-04-17",
+          "type": "法說會"
+        }
+      ],
       "signals": {
-        "trend_label": "unknown",
-        "trend_reason": "資料不足",
+        "trend_label": "strong_up",
+        "trend_reason": "多頭排列：價格 > MA20 > MA60 > MA120",
         "momentum_label": "bullish",
         "momentum_reason": "RSI 66 偏強 + MACD 多頭",
         "volume_label": "active",
@@ -1448,24 +1637,26 @@
         "ma_10": 219.0,
         "ma_20": 209.8,
         "ma_60": 214.21666666666667,
-        "ma_120": null,
-        "rsi_14": 56.62962834185368,
+        "ma_120": 223.37083333333334,
+        "ma_200": null,
+        "ma_200_slope": null,
+        "rsi_14": 56.65230314606665,
         "macd": {
-          "macd": 4.5766304596261875,
-          "signal": 2.325335792731048,
-          "hist": 2.2512946668951397
+          "macd": 4.578917748041334,
+          "signal": 2.328699400482487,
+          "hist": 2.2502183475588473
         },
         "kd": {
           "k": 64.49013614893026,
           "d": 70.59368343058257
         },
         "bollinger": {
-          "upper": 232.95258312290753,
+          "upper": 232.95258312290923,
           "mid": 209.8,
-          "lower": 186.6474168770925,
-          "bandwidth": 0.22071099259206414
+          "lower": 186.6474168770908,
+          "bandwidth": 0.22071099259208019
         },
-        "hv_20": 0.3651661064403368,
+        "hv_20": 0.36516610644033676,
         "volume_5d_avg": 81612926.0,
         "volume_today": 73683654.0
       },
@@ -1476,9 +1667,11 @@
         "margin_balance": 56342,
         "short_balance": 489
       },
+      "news": [],
+      "announcements": [],
       "signals": {
-        "trend_label": "unknown",
-        "trend_reason": "資料不足",
+        "trend_label": "sideways",
+        "trend_reason": "盤整：均線糾結，方向不明",
         "momentum_label": "bullish",
         "momentum_reason": "RSI 57 偏強 + MACD 多頭",
         "volume_label": "normal",
@@ -1921,24 +2114,26 @@
         "ma_10": 325.3,
         "ma_20": 316.4,
         "ma_60": 295.55,
-        "ma_120": null,
-        "rsi_14": 50.48424314711553,
+        "ma_120": 288.5,
+        "ma_200": null,
+        "ma_200_slope": null,
+        "rsi_14": 50.5003186157255,
         "macd": {
-          "macd": 7.657220285064284,
-          "signal": 9.21864808301631,
-          "hist": -1.5614277979520264
+          "macd": 7.657737975889177,
+          "signal": 9.219409400371896,
+          "hist": -1.5616714244827197
         },
         "kd": {
-          "k": 16.26135302605891,
-          "d": 29.437601728623402
+          "k": 16.261353026058917,
+          "d": 29.437601728623424
         },
         "bollinger": {
-          "upper": 345.43283078099637,
+          "upper": 345.43283078099336,
           "mid": 316.4,
-          "lower": 287.3671692190036,
-          "bandwidth": 0.18351979001894048
+          "lower": 287.3671692190066,
+          "bandwidth": 0.18351979001892157
         },
-        "hv_20": 0.43999273312624587,
+        "hv_20": 0.4399927331262459,
         "volume_5d_avg": 16307205.8,
         "volume_today": 18917525.0
       },
@@ -1949,11 +2144,49 @@
         "margin_balance": 9955,
         "short_balance": 919
       },
+      "news": [
+        {
+          "title": "AI伺服器需求火燙，廣達、緯創3月/Q1 業績同奔歷史新高 - MSN",
+          "url": "https://www.msn.com/zh-tw/money/topstories/ai%E4%BC%BA%E6%9C%8D%E5%99%A8%E9%9C%80%E6%B1%82%E7%81%AB%E7%87%99-%E5%BB%A3%E9%81%94-%E7%B7%AF%E5%89%B53%E6%9C%88-q1%E6%A5%AD%E7%B8%BE%E5%90%8C%E5%A5%94%E6%AD%B7%E5%8F%B2%E6%96%B0%E9%AB%98/ar-AA20puiL?apiversion=v2&domshim=1&noservercache=1&noservertelemetry=1&batchservertelemetry=1&renderwebcomponents=1&wcseo=1",
+          "source": "MSN",
+          "date": "2026-04-17",
+          "summary": ""
+        },
+        {
+          "title": "5大ODM廠1表比》廣達、緯創、仁寶...大摩最新報告出爐目標價、EPS全說了：這檔Q1獲利暴衝26％ - 上市櫃 - 旺得富理財網",
+          "url": "https://wantrich.chinatimes.com/news/20260417900339-420101",
+          "source": "旺得富理財網",
+          "date": "2026-04-17",
+          "summary": ""
+        },
+        {
+          "title": "《熱門族群》AI PC逆勢抗空 廣達穩揚、仁寶有底氣 - 富聯網",
+          "url": "https://ww2.money-link.com.tw/realtimenews/NewsContent.aspx?SN=6144720001&PU=1002",
+          "source": "富聯網",
+          "date": "2026-04-17",
+          "summary": ""
+        },
+        {
+          "title": "外資殺回來了！本周狂掃1,500億元指路亞翔、廣達等15檔「三強股」扛多頭大旗- 日報 - 工商時報",
+          "url": "https://www.ctee.com.tw/news/20260418700133-439901",
+          "source": "工商時報",
+          "date": "2026-04-17",
+          "summary": ""
+        },
+        {
+          "title": "廣達(2382)-台新-三民 - 券商分點進出買賣統計 - 股市爆料同學會 - CMoney",
+          "url": "https://www.cmoney.tw/forum/stock/2382?s=broker&agent=9B13",
+          "source": "CMoney",
+          "date": "2026-04-17",
+          "summary": ""
+        }
+      ],
+      "announcements": [],
       "signals": {
-        "trend_label": "unknown",
-        "trend_reason": "資料不足",
+        "trend_label": "sideways",
+        "trend_reason": "盤整：均線糾結，方向不明",
         "momentum_label": "neutral",
-        "momentum_reason": "RSI 50，動能中性",
+        "momentum_reason": "RSI 51，動能中性",
         "volume_label": "normal",
         "volume_reason": "量能正常 (1.2x)",
         "chip_label": "distributing",
@@ -2394,24 +2627,26 @@
         "ma_10": 2585.5,
         "ma_20": 2498.25,
         "ma_60": 2397.1666666666665,
-        "ma_120": null,
-        "rsi_14": 51.56463022468181,
+        "ma_120": 2327.625,
+        "ma_200": null,
+        "ma_200_slope": null,
+        "rsi_14": 51.56823904689171,
         "macd": {
-          "macd": 63.098051986895825,
-          "signal": 69.84533734860607,
-          "hist": -6.74728536171024
+          "macd": 63.09296617227574,
+          "signal": 69.83785825136853,
+          "hist": -6.744892079092793
         },
         "kd": {
-          "k": 33.40173278613772,
+          "k": 33.40173278613773,
           "d": 33.18497941812384
         },
         "bollinger": {
           "upper": 2913.4642756900853,
           "mid": 2498.25,
           "lower": 2083.0357243099147,
-          "bandwidth": 0.33240410342446525
+          "bandwidth": 0.3324041034244652
         },
-        "hv_20": 0.6320170682834318,
+        "hv_20": 0.6320170682834321,
         "volume_5d_avg": 1696086.8,
         "volume_today": 1185538.0
       },
@@ -2422,9 +2657,78 @@
         "margin_balance": 1164,
         "short_balance": 6
       },
+      "news": [
+        {
+          "title": "大立光法說變法會挫逾7％...網哭「誠實豆沙包吃太多」 - CMoney",
+          "url": "https://www.cmoney.tw/forum/article/178240815",
+          "source": "CMoney",
+          "date": "2026-04-17",
+          "summary": ""
+        },
+        {
+          "title": "大立光法說／營收年增7%，毛利率49.4％，說明CPO進度｜股市話題｜豐雲學堂 2026 年 04 月 - sinotrade.com.tw",
+          "url": "https://www.sinotrade.com.tw/richclub/hotstock/%E5%A4%A7%E7%AB%8B%E5%85%89%E6%B3%95%E8%AA%AA-%E7%87%9F%E6%94%B6%E5%B9%B4%E5%A2%9E7--%E6%AF%9B%E5%88%A9%E7%8E%8749-4--%E8%AA%AA%E6%98%8ECPO%E9%80%B2%E5%BA%A6-%E8%82%A1%E5%B8%82%E8%A9%B1%E9%A1%8C-69e08f7f84125e0a7db21ae0",
+          "source": "sinotrade.com.tw",
+          "date": "2026-04-17",
+          "summary": ""
+        },
+        {
+          "title": "3008 大立光 - 今賣了零股，認賠 - 股市爆料同學會 - CMoney",
+          "url": "https://www.cmoney.tw/forum/article/178241580",
+          "source": "CMoney",
+          "date": "2026-04-17",
+          "summary": ""
+        },
+        {
+          "title": "3008 大立光 - 🏆今日熱門排名NO.70《大立光3008》 📈高低價差：... - 股市爆料同學會 - CMoney",
+          "url": "https://www.cmoney.tw/forum/article/178241831",
+          "source": "CMoney",
+          "date": "2026-04-17",
+          "summary": ""
+        },
+        {
+          "title": "【04/17 產業即時新聞】電子中游-光學鏡片大立光領跌重挫，類股光芒失色。 - CMoney投資網誌",
+          "url": "https://cmnews.com.tw/article/cmoneyairesearcher-1fe160d5-39fd-11f1-bc10-f440d97388cf",
+          "source": "CMoney投資網誌",
+          "date": "2026-04-17",
+          "summary": ""
+        }
+      ],
+      "announcements": [
+        {
+          "title": "大立光法說變法會挫逾7％...網哭「誠實豆沙包吃太多」 - CMoney",
+          "url": "https://www.cmoney.tw/forum/article/178240815",
+          "date": "2026-04-17",
+          "type": "法說會"
+        },
+        {
+          "title": "大立光法說／營收年增7%，毛利率49.4％，說明CPO進度｜股市話題｜豐雲學堂 2026 年 04 月 - sinotrade.com.tw",
+          "url": "https://www.sinotrade.com.tw/richclub/hotstock/%E5%A4%A7%E7%AB%8B%E5%85%89%E6%B3%95%E8%AA%AA-%E7%87%9F%E6%94%B6%E5%B9%B4%E5%A2%9E7--%E6%AF%9B%E5%88%A9%E7%8E%8749-4--%E8%AA%AA%E6%98%8ECPO%E9%80%B2%E5%BA%A6-%E8%82%A1%E5%B8%82%E8%A9%B1%E9%A1%8C-69e08f7f84125e0a7db21ae0",
+          "date": "2026-04-17",
+          "type": "法說會"
+        },
+        {
+          "title": "大立光法說會釋出Q2淡季及CPO新業務1-2年量產， 股價開低走跌 - MSN",
+          "url": "https://www.msn.com/zh-tw/money/topstories/%E5%A4%A7%E7%AB%8B%E5%85%89%E6%B3%95%E8%AA%AA%E6%9C%83%E9%87%8B%E5%87%BAq2%E6%B7%A1%E5%AD%A3%E5%8F%8Acpo%E6%96%B0%E6%A5%AD%E5%8B%991-2%E5%B9%B4%E9%87%8F%E7%94%A2-%E8%82%A1%E5%83%B9%E9%96%8B%E4%BD%8E%E8%B5%B0%E8%B7%8C/ar-AA215uHT",
+          "date": "2026-04-17",
+          "type": "法說會"
+        },
+        {
+          "title": "大立光法說變法會挫逾7％...網哭「誠實豆沙包吃太多」 分析師看法出爐 - Yahoo股市",
+          "url": "https://tw.stock.yahoo.com/news/%E5%A4%A7%E7%AB%8B%E5%85%89%E6%B3%95%E8%AA%AA%E8%AE%8A%E6%B3%95%E6%9C%83%E6%8C%AB%E9%80%BE7%EF%BC%85%E7%B6%B2%E5%93%AD%E3%80%8C%E8%AA%A0%E5%AF%A6%E8%B1%86%E6%B2%99%E5%8C%85%E5%90%83%E5%A4%AA%E5%A4%9A%E3%80%8D-%E5%88%86%E6%9E%90%E5%B8%AB%E7%9C%8B%E6%B3%95%E5%87%BA%E7%88%90-041311546.html",
+          "date": "2026-04-17",
+          "type": "法說會"
+        },
+        {
+          "title": "大立光法說4/16登場，Q1財報、Q2展望受矚，法人聚焦CPO 產品等五大重點 - MSN",
+          "url": "https://www.msn.com/zh-tw/money/topstories/%E5%A4%A7%E7%AB%8B%E5%85%89%E6%B3%95%E8%AA%AA4-16%E7%99%BB%E5%A0%B4-q1%E8%B2%A1%E5%A0%B1-q2%E5%B1%95%E6%9C%9B%E5%8F%97%E7%9F%9A-%E6%B3%95%E4%BA%BA%E8%81%9A%E7%84%A6cpo%E7%94%A2%E5%93%81%E7%AD%89%E4%BA%94%E5%A4%A7%E9%87%8D%E9%BB%9E/ar-AA20oARN",
+          "date": "2026-04-17",
+          "type": "法說會"
+        }
+      ],
       "signals": {
-        "trend_label": "unknown",
-        "trend_reason": "資料不足",
+        "trend_label": "strong_up",
+        "trend_reason": "多頭排列：價格 > MA20 > MA60 > MA120",
         "momentum_label": "neutral",
         "momentum_reason": "RSI 52，動能中性",
         "volume_label": "normal",
@@ -2865,26 +3169,28 @@
         "latest_close": 17.2,
         "ma_5": 17.25,
         "ma_10": 18.055,
-        "ma_20": 18.104999999999997,
+        "ma_20": 18.105,
         "ma_60": 16.243333333333332,
-        "ma_120": null,
-        "rsi_14": 48.227600893451516,
+        "ma_120": 14.384166666666665,
+        "ma_200": null,
+        "ma_200_slope": null,
+        "rsi_14": 48.23057361500252,
         "macd": {
-          "macd": 0.3098928522551141,
-          "signal": 0.6061007320793826,
-          "hist": -0.29620787982426855
+          "macd": 0.3097397175376102,
+          "signal": 0.6058755417871406,
+          "hist": -0.29613582424953044
         },
         "kd": {
-          "k": 13.350042144438126,
-          "d": 11.77342223182215
+          "k": 13.350042144438115,
+          "d": 11.773422231822131
         },
         "bollinger": {
-          "upper": 20.76382839255433,
-          "mid": 18.104999999999997,
-          "lower": 15.446171607445661,
-          "bandwidth": 0.2937120566201973
+          "upper": 20.763828392554053,
+          "mid": 18.105,
+          "lower": 15.446171607445947,
+          "bandwidth": 0.29371205662016603
         },
-        "hv_20": 0.7394055594131952,
+        "hv_20": 0.7394055594131953,
         "volume_5d_avg": 145725801.8,
         "volume_today": 107364483.0
       },
@@ -2895,9 +3201,47 @@
         "margin_balance": 199133,
         "short_balance": 18928
       },
+      "news": [
+        {
+          "title": "2409 友達 - 夜盤- 股市爆料同學會 - CMoney",
+          "url": "https://www.cmoney.tw/forum/article/178241806",
+          "source": "CMoney",
+          "date": "2026-04-17",
+          "summary": ""
+        },
+        {
+          "title": "2409 友達 - 20260418，友達怎麼再上21.85，破線翻過前高! - 股市爆料同學會 - CMoney",
+          "url": "https://www.cmoney.tw/forum/article/178244593",
+          "source": "CMoney",
+          "date": "2026-04-17",
+          "summary": ""
+        },
+        {
+          "title": "2409 友達 - 恭喜還在車上的朋友 - 股市爆料同學會 - CMoney",
+          "url": "https://www.cmoney.tw/forum/article/176699453",
+          "source": "CMoney",
+          "date": "2026-04-17",
+          "summary": ""
+        },
+        {
+          "title": "2409 友達 - 目前友達具備「轉盈」與「轉型」雙利多，且借券水位確實處於歷史... - 股市爆料同學會 - CMoney",
+          "url": "https://www.cmoney.tw/forum/article/178247342",
+          "source": "CMoney",
+          "date": "2026-04-17",
+          "summary": ""
+        },
+        {
+          "title": "2409 友達 - 認賠，看他大漲 - 股市爆料同學會 - CMoney",
+          "url": "https://www.cmoney.tw/forum/article/176522063",
+          "source": "CMoney",
+          "date": "2026-04-17",
+          "summary": ""
+        }
+      ],
+      "announcements": [],
       "signals": {
-        "trend_label": "unknown",
-        "trend_reason": "資料不足",
+        "trend_label": "sideways",
+        "trend_reason": "盤整：均線糾結，方向不明",
         "momentum_label": "bearish",
         "momentum_reason": "RSI 48 偏弱 + MACD 空頭",
         "volume_label": "normal",
@@ -3340,24 +3684,26 @@
         "ma_10": 200.4,
         "ma_20": 201.35,
         "ma_60": 200.4,
-        "ma_120": null,
-        "rsi_14": 50.38527094686365,
+        "ma_120": 193.45416666666668,
+        "ma_200": null,
+        "ma_200_slope": null,
+        "rsi_14": 50.41252195773387,
         "macd": {
-          "macd": -0.6565447907971986,
-          "signal": -0.7352412442082096,
-          "hist": 0.07869645341101095
+          "macd": -0.6556622882374086,
+          "signal": -0.7339434840467083,
+          "hist": 0.07828119580929971
         },
         "kd": {
-          "k": 60.784313725490186,
-          "d": 54.24836601307189
+          "k": 60.78431372549019,
+          "d": 54.248366013071895
         },
         "bollinger": {
-          "upper": 204.89074033293576,
+          "upper": 204.89074033293602,
           "mid": 201.35,
-          "lower": 197.80925966706423,
-          "bandwidth": 0.03517000579027323
+          "lower": 197.80925966706397,
+          "bandwidth": 0.03517000579027592
         },
-        "hv_20": 0.16856039510421073,
+        "hv_20": 0.16856039510421053,
         "volume_5d_avg": 7861603.0,
         "volume_today": 6460050.0
       },
@@ -3368,17 +3714,55 @@
         "margin_balance": 14218,
         "short_balance": 19
       },
+      "news": [
+        {
+          "title": "2603 長榮 - 準備賣掉長榮- 股市爆料同學會 - CMoney",
+          "url": "https://www.cmoney.tw/forum/article/178242074",
+          "source": "CMoney",
+          "date": "2026-04-17",
+          "summary": ""
+        },
+        {
+          "title": "2603 長榮 - 川普宣布荷姆茲「永久開放」稱「習近平一定會給我大擁抱」 - 股市爆料同學會 - CMoney",
+          "url": "https://www.cmoney.tw/forum/article/178243471",
+          "source": "CMoney",
+          "date": "2026-04-17",
+          "summary": ""
+        },
+        {
+          "title": "長榮陽明不妙？SCFI翻黑了法人「1理由」踩剎車：4月營收看法曝光- 上市櫃 - 旺得富理財網",
+          "url": "https://wantrich.chinatimes.com/news/20260417900517-420101",
+          "source": "旺得富理財網",
+          "date": "2026-04-17",
+          "summary": ""
+        },
+        {
+          "title": "討論牆| 鉅亨速報- Factset 最新調查：長榮(2603-TW)EPS預估上修至23.14元，預估目標價為235元 - LINE TODAY",
+          "url": "https://today.line.me/tw/v3/posts/list/article/yzjr6Bk",
+          "source": "LINE TODAY",
+          "date": "2026-04-17",
+          "summary": ""
+        },
+        {
+          "title": "2603 長榮 - 😎黎明前的曙光，掯你下禮拜跌到187 - 股市爆料同學會 - CMoney",
+          "url": "https://www.cmoney.tw/forum/article/178249379",
+          "source": "CMoney",
+          "date": "2026-04-17",
+          "summary": ""
+        }
+      ],
+      "announcements": [],
       "signals": {
-        "trend_label": "unknown",
-        "trend_reason": "資料不足",
+        "trend_label": "strong_up",
+        "trend_reason": "多頭排列：價格 > MA20 > MA60 > MA120",
         "momentum_label": "bullish",
         "momentum_reason": "RSI 50 偏強 + MACD 多頭",
         "volume_label": "normal",
         "volume_reason": "量能正常 (0.8x)",
         "chip_label": "accumulating",
         "chip_reason": "法人 5 日合計買超 5,017 張",
-        "verdict": "HOLD",
-        "verdict_reason": "多頭訊號優於空頭，可續抱"
+        "verdict": "BUY",
+        "verdict_reason": "多項偏多訊號同時出現"
       },
       "price_history": [
         {
@@ -3801,7 +4185,8 @@
           "low": 200.0,
           "volume": 6460050
         }
-      ]
+      ],
+      "news_commentary": "長榮主要面臨運價指數SCFI下跌利空，但法人仍上修其EPS預估與目標價。整體情緒為中性偏空，市場對運價走勢擔憂。投資人應關注SCFI後續表現及4月營收。"
     },
     "2609": {
       "symbol": "2609",
@@ -3809,28 +4194,30 @@
       "price_change_pct": -0.41,
       "indicators": {
         "latest_close": 49.15,
-        "ma_5": 49.489999999999995,
+        "ma_5": 49.49,
         "ma_10": 49.955,
         "ma_20": 50.6925,
         "ma_60": 54.280833333333334,
-        "ma_120": null,
-        "rsi_14": 32.861411036097735,
+        "ma_120": 54.02791666666667,
+        "ma_200": null,
+        "ma_200_slope": null,
+        "rsi_14": 32.883739341312335,
         "macd": {
-          "macd": -1.3576405997290735,
-          "signal": -1.396243454288879,
-          "hist": 0.03860285455980561
+          "macd": -1.3574757877860861,
+          "signal": -1.3960010904248188,
+          "hist": 0.03852530263873266
         },
         "kd": {
           "k": 9.941520467836343,
           "d": 11.087440824283009
         },
         "bollinger": {
-          "upper": 52.645439754373136,
+          "upper": 52.64543975437341,
           "mid": 50.6925,
-          "lower": 48.73956024562687,
-          "bandwidth": 0.07705044155932876
+          "lower": 48.73956024562659,
+          "bandwidth": 0.07705044155933966
         },
-        "hv_20": 0.14998593939648114,
+        "hv_20": 0.14998593939648147,
         "volume_5d_avg": 14711407.4,
         "volume_today": 11508316.0
       },
@@ -3841,9 +4228,26 @@
         "margin_balance": 35725,
         "short_balance": 126
       },
+      "news": [
+        {
+          "title": "陽明(2609)-元大-博愛 - 券商分點進出買賣統計 - 股市爆料同學會 - CMoney",
+          "url": "https://www.cmoney.tw/forum/stock/2609?s=broker&agent=982B",
+          "source": "CMoney",
+          "date": "2026-04-17",
+          "summary": ""
+        },
+        {
+          "title": "2609 陽明 - 2609 weekly chart.. Please no... - 股市爆料同學會 - CMoney",
+          "url": "https://www.cmoney.tw/forum/article/178252077",
+          "source": "CMoney",
+          "date": "2026-04-17",
+          "summary": ""
+        }
+      ],
+      "announcements": [],
       "signals": {
-        "trend_label": "unknown",
-        "trend_reason": "資料不足",
+        "trend_label": "down",
+        "trend_reason": "中短線空頭：價格跌破 MA20 與 MA60",
         "momentum_label": "neutral",
         "momentum_reason": "RSI 33，動能中性",
         "volume_label": "normal",
@@ -3851,7 +4255,7 @@
         "chip_label": "distributing",
         "chip_reason": "法人 5 日合計賣超 9,068 張",
         "verdict": "WATCH",
-        "verdict_reason": "訊號中性，觀望為宜"
+        "verdict_reason": "空頭訊號浮現，留意停損"
       },
       "price_history": [
         {
@@ -4274,7 +4678,8 @@
           "low": 49.1,
           "volume": 11508316
         }
-      ]
+      ],
+      "news_commentary": "主要新聞聚焦陽明技術面，包含特定券商進出與週線圖分析。週線圖出現「Please no...」暗示偏空疑慮。投資人應留意股價技術走勢及支撐位。"
     },
     "2618": {
       "symbol": "2618",
@@ -4282,28 +4687,30 @@
       "price_change_pct": -1.47,
       "indicators": {
         "latest_close": 33.5,
-        "ma_5": 33.59,
+        "ma_5": 33.589999999999996,
         "ma_10": 34.265,
         "ma_20": 34.61,
-        "ma_60": 35.69333333333334,
-        "ma_120": null,
-        "rsi_14": 39.16622390199828,
+        "ma_60": 35.693333333333335,
+        "ma_120": 35.719166666666666,
+        "ma_200": null,
+        "ma_200_slope": null,
+        "rsi_14": 39.16264598146908,
         "macd": {
-          "macd": -0.4264988854273568,
-          "signal": -0.30135297168293407,
-          "hist": -0.12514591374442274
+          "macd": -0.42667177033002446,
+          "signal": -0.30160720789696993,
+          "hist": -0.12506456243305453
         },
         "kd": {
           "k": 18.11594202898542,
           "d": 13.941533506750849
         },
         "bollinger": {
-          "upper": 36.02926593331671,
+          "upper": 36.029265933316765,
           "mid": 34.61,
-          "lower": 33.19073406668329,
-          "bandwidth": 0.08201478955889673
+          "lower": 33.190734066683234,
+          "bandwidth": 0.08201478955890018
         },
-        "hv_20": 0.237715868817504,
+        "hv_20": 0.23771586881750406,
         "volume_5d_avg": 24573425.8,
         "volume_today": 26150659.0
       },
@@ -4314,17 +4721,34 @@
         "margin_balance": 44052,
         "short_balance": 230
       },
+      "news": [
+        {
+          "title": "長榮航深耕維也納航線35周年 深化中東歐連結 - news.cnyes.com",
+          "url": "https://news.cnyes.com/news/id/6422768",
+          "source": "news.cnyes.com",
+          "date": "2026-04-17",
+          "summary": ""
+        },
+        {
+          "title": "長榮航機上服務用品報捷，獲頒六項國際大獎- 新聞 - MoneyDJ理財網",
+          "url": "https://m.moneydj.com/f1a.aspx?a=0d2c1d59-a829-4c20-af83-5102596f8a63",
+          "source": "MoneyDJ理財網",
+          "date": "2026-04-17",
+          "summary": ""
+        }
+      ],
+      "announcements": [],
       "signals": {
-        "trend_label": "unknown",
-        "trend_reason": "資料不足",
+        "trend_label": "strong_down",
+        "trend_reason": "空頭排列：價格 < MA20 < MA60 < MA120",
         "momentum_label": "bearish",
         "momentum_reason": "RSI 39 偏弱 + MACD 空頭",
         "volume_label": "normal",
         "volume_reason": "量能正常 (1.1x)",
         "chip_label": "distributing",
         "chip_reason": "法人 5 日合計賣超 18,447 張",
-        "verdict": "WATCH",
-        "verdict_reason": "空頭訊號浮現，留意停損"
+        "verdict": "SELL",
+        "verdict_reason": "多項空頭訊號，建議降低部位"
       },
       "price_history": [
         {
@@ -4747,7 +5171,8 @@
           "low": 33.5,
           "volume": 26150659
         }
-      ]
+      ],
+      "news_commentary": "長榮航深耕維也納航線並提升機上服務品質獲國際肯定，兩者皆為利多消息。整體情緒偏多，建議關注其航線拓展及服務優化對營收的實質貢獻。"
     },
     "2610": {
       "symbol": "2610",
@@ -4759,24 +5184,26 @@
         "ma_10": 18.04,
         "ma_20": 18.15,
         "ma_60": 19.6075,
-        "ma_120": null,
-        "rsi_14": 39.86051474343998,
+        "ma_120": 19.757083333333334,
+        "ma_200": null,
+        "ma_200_slope": null,
+        "rsi_14": 39.872213490566274,
         "macd": {
-          "macd": -0.2749685642539319,
-          "signal": -0.3219160305703286,
-          "hist": 0.04694746631639668
+          "macd": -0.27504462198777446,
+          "signal": -0.32202787713877273,
+          "hist": 0.04698325515099827
         },
         "kd": {
-          "k": 45.811965811965784,
-          "d": 36.125356125356205
+          "k": 45.81196581196576,
+          "d": 36.1253561253562
         },
         "bollinger": {
-          "upper": 18.524165738677713,
+          "upper": 18.52416573867745,
           "mid": 18.15,
-          "lower": 17.775834261322284,
-          "bandwidth": 0.0412303844272962
+          "lower": 17.775834261322547,
+          "bandwidth": 0.04123038442726734
         },
-        "hv_20": 0.18510450249276422,
+        "hv_20": 0.18510450249276436,
         "volume_5d_avg": 21740641.0,
         "volume_today": 21412281.0
       },
@@ -4787,9 +5214,11 @@
         "margin_balance": 51285,
         "short_balance": 483
       },
+      "news": [],
+      "announcements": [],
       "signals": {
-        "trend_label": "unknown",
-        "trend_reason": "資料不足",
+        "trend_label": "strong_down",
+        "trend_reason": "空頭排列：價格 < MA20 < MA60 < MA120",
         "momentum_label": "neutral",
         "momentum_reason": "RSI 40，動能中性",
         "volume_label": "normal",
@@ -4797,7 +5226,7 @@
         "chip_label": "distributing",
         "chip_reason": "法人 5 日合計賣超 30,789 張",
         "verdict": "WATCH",
-        "verdict_reason": "訊號中性，觀望為宜"
+        "verdict_reason": "空頭訊號浮現，留意停損"
       },
       "price_history": [
         {
@@ -5230,24 +5659,26 @@
         "latest_close": 77.2,
         "ma_5": 75.98,
         "ma_10": 75.57000000000001,
-        "ma_20": 74.16999999999999,
+        "ma_20": 74.17,
         "ma_60": 74.28,
-        "ma_120": null,
-        "rsi_14": 61.998168541049836,
+        "ma_120": 72.19916666666667,
+        "ma_200": null,
+        "ma_200_slope": null,
+        "rsi_14": 61.991063893957765,
         "macd": {
-          "macd": 0.977139818588725,
-          "signal": 0.5612828783214454,
-          "hist": 0.4158569402672796
+          "macd": 0.9769877345090237,
+          "signal": 0.561059232902471,
+          "hist": 0.4159285016065527
         },
         "kd": {
           "k": 67.72178013557324,
           "d": 67.02311949438388
         },
         "bollinger": {
-          "upper": 77.78988659316438,
-          "mid": 74.16999999999999,
-          "lower": 70.55011340683559,
-          "bandwidth": 0.09761053237601158
+          "upper": 77.78988659316487,
+          "mid": 74.17,
+          "lower": 70.55011340683514,
+          "bandwidth": 0.09761053237602432
         },
         "hv_20": 0.2548773599932908,
         "volume_5d_avg": 36172261.4,
@@ -5260,9 +5691,26 @@
         "margin_balance": 3786,
         "short_balance": 122
       },
+      "news": [
+        {
+          "title": "金控雙雄Q1獲利遇干擾 富邦、國泰金分別 EPS 2.37元、2.15元 - 經濟日報",
+          "url": "https://money.udn.com/money/story/5613/9444486",
+          "source": "經濟日報",
+          "date": "2026-04-17",
+          "summary": ""
+        },
+        {
+          "title": "國泰金(2882) 個股概覽 | 個股 - 股市 - CMoney",
+          "url": "https://www.cmoney.tw/finance/2882/f00025",
+          "source": "CMoney",
+          "date": "2026-04-17",
+          "summary": ""
+        }
+      ],
+      "announcements": [],
       "signals": {
-        "trend_label": "unknown",
-        "trend_reason": "資料不足",
+        "trend_label": "sideways",
+        "trend_reason": "盤整：均線糾結，方向不明",
         "momentum_label": "bullish",
         "momentum_reason": "RSI 62 偏強 + MACD 多頭",
         "volume_label": "normal",
@@ -5705,24 +6153,26 @@
         "ma_10": 52.970000000000006,
         "ma_20": 53.58,
         "ma_60": 52.525,
-        "ma_120": null,
-        "rsi_14": 45.240697438779485,
+        "ma_120": 49.389583333333334,
+        "ma_200": null,
+        "ma_200_slope": null,
+        "rsi_14": 45.23436869105162,
         "macd": {
-          "macd": 0.008662735928794518,
-          "signal": 0.1626095630563995,
-          "hist": -0.153946827127605
+          "macd": 0.008625862593859779,
+          "signal": 0.1625553382724065,
+          "hist": -0.15392947567854673
         },
         "kd": {
-          "k": 31.111111111111086,
-          "d": 32.098765432098766
+          "k": 31.111111111111104,
+          "d": 32.09876543209879
         },
         "bollinger": {
-          "upper": 55.71699247591204,
+          "upper": 55.71699247591322,
           "mid": 53.58,
-          "lower": 51.44300752408795,
-          "bandwidth": 0.07976828950772853
+          "lower": 51.443007524086774,
+          "bandwidth": 0.07976828950777241
         },
-        "hv_20": 0.26381079835771365,
+        "hv_20": 0.26381079835771376,
         "volume_5d_avg": 46217786.6,
         "volume_today": 52055563.0
       },
@@ -5733,9 +6183,19 @@
         "margin_balance": 3954,
         "short_balance": 157
       },
+      "news": [
+        {
+          "title": "中信金獲利穩健 去年 EPS 4.08元刷新紀錄 股價穩守10日線支撐 - 經濟日報",
+          "url": "https://money.udn.com/money/story/5613/9435941",
+          "source": "經濟日報",
+          "date": "2026-04-17",
+          "summary": ""
+        }
+      ],
+      "announcements": [],
       "signals": {
-        "trend_label": "unknown",
-        "trend_reason": "資料不足",
+        "trend_label": "sideways",
+        "trend_reason": "盤整：均線糾結，方向不明",
         "momentum_label": "bearish",
         "momentum_reason": "RSI 45 偏弱 + MACD 空頭",
         "volume_label": "normal",
@@ -6178,24 +6638,26 @@
         "ma_10": 19.265,
         "ma_20": 19.605,
         "ma_60": 19.769166666666667,
-        "ma_120": null,
-        "rsi_14": 38.647726095046764,
+        "ma_120": 19.18375,
+        "ma_200": null,
+        "ma_200_slope": null,
+        "rsi_14": 38.6529472150603,
         "macd": {
-          "macd": -0.20929601210604432,
-          "signal": -0.07990714289882903,
-          "hist": -0.1293888692072153
+          "macd": -0.20937636371124668,
+          "signal": -0.08002530366747046,
+          "hist": -0.12935106004377622
         },
         "kd": {
-          "k": 8.602150537634449,
-          "d": 7.008768299090929
+          "k": 8.60215053763446,
+          "d": 7.008768299090934
         },
         "bollinger": {
-          "upper": 20.698954680096605,
+          "upper": 20.6989546800966,
           "mid": 19.605,
-          "lower": 18.511045319903396,
-          "bandwidth": 0.11159955930595306
+          "lower": 18.511045319903403,
+          "bandwidth": 0.11159955930595222
         },
-        "hv_20": 0.2238885828277015,
+        "hv_20": 0.2238885828277016,
         "volume_5d_avg": 48830440.6,
         "volume_today": 40997251.0
       },
@@ -6206,17 +6668,27 @@
         "margin_balance": 36161,
         "short_balance": 418
       },
+      "news": [
+        {
+          "title": "中鋼反傾銷 瞄準中、韓冷軋鋼 - 經濟日報",
+          "url": "https://money.udn.com/money/story/5710/9448736",
+          "source": "經濟日報",
+          "date": "2026-04-17",
+          "summary": ""
+        }
+      ],
+      "announcements": [],
       "signals": {
-        "trend_label": "unknown",
-        "trend_reason": "資料不足",
+        "trend_label": "down",
+        "trend_reason": "中短線空頭：價格跌破 MA20 與 MA60",
         "momentum_label": "bearish",
         "momentum_reason": "RSI 39 偏弱 + MACD 空頭",
         "volume_label": "normal",
         "volume_reason": "量能正常 (0.8x)",
         "chip_label": "distributing",
         "chip_reason": "法人 5 日合計賣超 145,200 張",
-        "verdict": "WATCH",
-        "verdict_reason": "空頭訊號浮現，留意停損"
+        "verdict": "SELL",
+        "verdict_reason": "多項空頭訊號，建議降低部位"
       },
       "price_history": [
         {
@@ -6648,27 +7120,29 @@
       "indicators": {
         "latest_close": 90.5,
         "ma_5": 91.24000000000001,
-        "ma_10": 88.36,
+        "ma_10": 88.35999999999999,
         "ma_20": 84.0125,
         "ma_60": 78.29416666666665,
-        "ma_120": null,
-        "rsi_14": 70.34175807429952,
+        "ma_120": 71.52708333333334,
+        "ma_200": null,
+        "ma_200_slope": null,
+        "rsi_14": 70.34352219127479,
         "macd": {
-          "macd": 3.871059978971701,
-          "signal": 3.215779203759683,
-          "hist": 0.655280775212018
+          "macd": 3.8714190670622486,
+          "signal": 3.2163072668611354,
+          "hist": 0.6551118002011131
         },
         "kd": {
-          "k": 68.54571096731377,
+          "k": 68.54571096731375,
           "d": 78.18498971534
         },
         "bollinger": {
-          "upper": 95.28794490894897,
+          "upper": 95.28794490894903,
           "mid": 84.0125,
-          "lower": 72.73705509105103,
-          "bandwidth": 0.2684230301193031
+          "lower": 72.73705509105098,
+          "bandwidth": 0.2684230301193043
         },
-        "hv_20": 0.31858757734060755,
+        "hv_20": 0.31858757734060766,
         "volume_5d_avg": 128246129.0,
         "volume_today": 89209769.0
       },
@@ -6679,9 +7153,47 @@
         "margin_balance": 9569,
         "short_balance": 1498
       },
+      "news": [
+        {
+          "title": "0050股價85元離「安全價」超遠，這樣還能買？施昇輝：一個步驟做下去「免再糾結買進時間點」 - 今周刊",
+          "url": "https://www.businesstoday.com.tw/article/category/183013/post/202604150027/",
+          "source": "今周刊",
+          "date": "2026-04-17",
+          "summary": ""
+        },
+        {
+          "title": "兩個月狂飆近20%！009816費用率下降0.16% 逆轉勝0050、006208震撼市場 - 蕃新聞",
+          "url": "https://n.yam.com/Article/20260417581643",
+          "source": "蕃新聞",
+          "date": "2026-04-17",
+          "summary": ""
+        },
+        {
+          "title": "《基金》元大台灣50正2規模破千億 台股首檔千億槓桿ETF - 富聯網",
+          "url": "https://ww2.money-link.com.tw/RealtimeNews/NewsContent.aspx?SN=6144680001&PU=0010",
+          "source": "富聯網",
+          "date": "2026-04-17",
+          "summary": ""
+        },
+        {
+          "title": "台股多頭火上澆油…009816漲幅16.8%狠甩大盤 費用率「斷崖式下降」僅0.01%勝過0050 - 觀傳媒",
+          "url": "https://www.watchmedia01.com/archives/505444",
+          "source": "觀傳媒",
+          "date": "2026-04-17",
+          "summary": ""
+        },
+        {
+          "title": "【即時新聞】00894飆破40元創高！今年報酬狂勝0050，散戶還能追嗎？ - CMoney投資網誌",
+          "url": "https://cmnews.com.tw/article/newsyoudeservetoknow-523e80cf-3a0a-11f1-9b87-81e0a17d07cf",
+          "source": "CMoney投資網誌",
+          "date": "2026-04-17",
+          "summary": ""
+        }
+      ],
+      "announcements": [],
       "signals": {
-        "trend_label": "unknown",
-        "trend_reason": "資料不足",
+        "trend_label": "strong_up",
+        "trend_reason": "多頭排列：價格 > MA20 > MA60 > MA120",
         "momentum_label": "overbought",
         "momentum_reason": "RSI 70 過熱，短線可能拉回",
         "volume_label": "normal",
@@ -7124,24 +7636,26 @@
         "ma_10": 41.247,
         "ma_20": 40.226,
         "ma_60": 39.03333333333333,
-        "ma_120": null,
-        "rsi_14": 57.4457499461612,
+        "ma_120": 37.85850000000001,
+        "ma_200": null,
+        "ma_200_slope": null,
+        "rsi_14": 57.455105860388635,
         "macd": {
-          "macd": 0.6580337965079011,
-          "signal": 0.6728319121614119,
-          "hist": -0.014798115653510857
+          "macd": 0.6580750581301658,
+          "signal": 0.6728925903717422,
+          "hist": -0.014817532241576448
         },
         "kd": {
-          "k": 32.36514522821566,
-          "d": 33.4035793620855
+          "k": 32.36514522821565,
+          "d": 33.40357936208548
         },
         "bollinger": {
-          "upper": 42.86070281955445,
+          "upper": 42.86070281955454,
           "mid": 40.226,
-          "lower": 37.59129718044555,
-          "bandwidth": 0.13099501911969616
+          "lower": 37.59129718044546,
+          "bandwidth": 0.13099501911970066
         },
-        "hv_20": 0.23643259515157733,
+        "hv_20": 0.23643259515157738,
         "volume_5d_avg": 76530864.4,
         "volume_today": 46787938.0
       },
@@ -7152,9 +7666,40 @@
         "margin_balance": 4820,
         "short_balance": 93
       },
+      "news": [
+        {
+          "title": "0056 元大高股息- 已退休人士的投資計劃- 股市爆料同學會 - CMoney",
+          "url": "https://www.cmoney.tw/forum/article/178241593",
+          "source": "CMoney",
+          "date": "2026-04-17",
+          "summary": ""
+        },
+        {
+          "title": "0056、00878、00919月領1萬成本暴增…晚2周買多花8.4萬！存股哥：優質資產只會變貴 - 聯合新聞網",
+          "url": "https://udn.com/news/story/123006/9447284",
+          "source": "聯合新聞網",
+          "date": "2026-04-17",
+          "summary": ""
+        },
+        {
+          "title": "今年報酬1表看》00929跑贏0056、00878、00919高股息三本柱再搭1檔績效會更狂- 基金 - 旺得富理財網",
+          "url": "https://wantrich.chinatimes.com/news/20260417900003-420401",
+          "source": "旺得富理財網",
+          "date": "2026-04-17",
+          "summary": ""
+        },
+        {
+          "title": "0056 元大高股息- 中經院：調升今年經濟成長預測至7.22% - 股市爆料同學會 - CMoney",
+          "url": "https://www.cmoney.tw/forum/article/178244827",
+          "source": "CMoney",
+          "date": "2026-04-17",
+          "summary": ""
+        }
+      ],
+      "announcements": [],
       "signals": {
-        "trend_label": "unknown",
-        "trend_reason": "資料不足",
+        "trend_label": "strong_up",
+        "trend_reason": "多頭排列：價格 > MA20 > MA60 > MA120",
         "momentum_label": "neutral",
         "momentum_reason": "RSI 57，動能中性",
         "volume_label": "normal",
@@ -7731,7 +8276,7 @@
         "name": "中鋼",
         "change_pct": -1.32
       },
-      "avg_rsi": 38.6,
+      "avg_rsi": 38.7,
       "foreign_net_5d_total": -144500,
       "verdict": "COOL",
       "verdict_reason": "今日均跌 -1.3%；外資 5 日累計賣超 144,500 張"
@@ -7766,21 +8311,15 @@
       "direction": "同向"
     },
     {
-      "sector_a": "半導體",
-      "sector_b": "ETF",
+      "sector_a": "ETF",
+      "sector_b": "半導體",
       "correlation": 0.81,
       "direction": "同向"
     },
     {
-      "sector_a": "金融",
-      "sector_b": "航空",
+      "sector_a": "航空",
+      "sector_b": "金融",
       "correlation": 0.79,
-      "direction": "同向"
-    },
-    {
-      "sector_a": "鋼鐵",
-      "sector_b": "航空",
-      "correlation": 0.66,
       "direction": "同向"
     },
     {
@@ -7788,39 +8327,15 @@
       "sector_b": "航空",
       "correlation": 0.66,
       "direction": "同向"
+    },
+    {
+      "sector_a": "航空",
+      "sector_b": "鋼鐵",
+      "correlation": 0.66,
+      "direction": "同向"
     }
   ],
   "recommendations": [
-    {
-      "symbol": "2002",
-      "name": "中鋼",
-      "reason": "價格相對 20 日均線折讓 4.4%；KD 黃金交叉；波動低於同儕",
-      "score": 59,
-      "signals": [
-        "低於 MA20 -4.4%",
-        "RSI 39 接近超賣",
-        "KD 黃金交叉",
-        "低波動"
-      ],
-      "latest_close": 18.75,
-      "rsi": 38.6,
-      "hv_20": 0.2239
-    },
-    {
-      "symbol": "2618",
-      "name": "長榮航",
-      "reason": "價格相對 20 日均線折讓 3.2%；KD 黃金交叉；波動低於同儕",
-      "score": 53,
-      "signals": [
-        "低於 MA20 -3.2%",
-        "RSI 39 接近超賣",
-        "KD 黃金交叉",
-        "低波動"
-      ],
-      "latest_close": 33.5,
-      "rsi": 39.2,
-      "hv_20": 0.2377
-    },
     {
       "symbol": "2609",
       "name": "陽明",
@@ -7835,9 +8350,47 @@
       "latest_close": 49.15,
       "rsi": 32.9,
       "hv_20": 0.15
+    },
+    {
+      "symbol": "2610",
+      "name": "華航",
+      "reason": "價格相對 20 日均線折讓 1.4%；MACD + KD 雙轉強；波動低於同儕",
+      "score": 49,
+      "signals": [
+        "低於 MA20 -1.4%",
+        "RSI 40 接近超賣",
+        "MACD 翻多",
+        "KD 黃金交叉",
+        "低波動"
+      ],
+      "latest_close": 17.9,
+      "rsi": 39.9,
+      "hv_20": 0.1851
     }
   ],
   "cautions": [
+    {
+      "symbol": "2618",
+      "name": "長榮航",
+      "reason": "多項空頭訊號，建議降低部位",
+      "verdict": "SELL",
+      "signals": [
+        "空頭訊號"
+      ],
+      "latest_close": 33.5,
+      "rsi": 39.2
+    },
+    {
+      "symbol": "2002",
+      "name": "中鋼",
+      "reason": "多項空頭訊號，建議降低部位",
+      "verdict": "SELL",
+      "signals": [
+        "空頭訊號"
+      ],
+      "latest_close": 18.75,
+      "rsi": 38.7
+    },
     {
       "symbol": "0050",
       "name": "元大台灣50",
