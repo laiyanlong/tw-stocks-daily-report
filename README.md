@@ -34,7 +34,46 @@ schemas/                       JSON Schema 定義
 
 ## 排程
 
-每個交易日（週一至週五）台北時間 14:00（台股 13:30 收盤後 30 分鐘）由 GitHub Actions 自動產生。
+每個交易日（週一至週五）台北時間 14:10（台股 13:30 收盤後 40 分鐘）由 GitHub Actions 自動產生。
+
+## CDN 取用方式
+
+App 透過 jsDelivr 公開 CDN 取資料（避開 GitHub raw 的 cache header 限制）：
+
+```
+https://cdn.jsdelivr.net/gh/laiyanlong/tw-stocks-daily-report@main/dashboard/data.json
+```
+
+## 三 repo 協同
+
+```
+┌─ tw-stocks-core (private) ──────────┐
+│  Python 引擎 — 每日 GitHub Action  │
+│  推送輸出 →                         │
+└──────────────┬──────────────────────┘
+               │
+┌──────────────▼──────────────────────┐
+│  tw-stocks-daily-report (本 repo)   │
+│  reports/*.md, dashboard/data.json, │
+│  schemas/data.schema.json,          │
+│  dashboard/index.html (GH Pages)    │
+└──────────────┬──────────────────────┘
+               │ jsDelivr CDN
+┌──────────────▼──────────────────────┐
+│  dappgo-tw-stocks-app (private)     │
+│  React Native + Expo 行動 App       │
+└─────────────────────────────────────┘
+```
+
+| Repo | Visibility | 用途 |
+|---|---|---|
+| [tw-stocks-core](https://github.com/laiyanlong/tw-stocks-core) | private | 引擎 — 每日跑分析 |
+| **tw-stocks-daily-report** (本 repo) | public | 已發布報告 + JSON + 公開 viewer |
+| [dappgo-tw-stocks-app](https://github.com/laiyanlong/dappgo-tw-stocks-app) | private | iOS/iPadOS/macOS 行動 App |
+
+姐妹產品：**DappGo Options** ([options-core](https://github.com/laiyanlong/options-core) · [options-daily-report](https://github.com/laiyanlong/options-daily-report) · [dappgo-options-app](https://github.com/laiyanlong/dappgo-options-app)) — 三 repo 架構完全相同。
+
+> **Schema 變動**請先在本 repo 更新 `schemas/data.schema.json`（CI 會擋住格式錯誤的 push），再依序部署 engine、app。
 
 ## 授權
 
