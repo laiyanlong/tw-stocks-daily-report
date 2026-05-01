@@ -7760,8 +7760,8 @@
   },
   "sector_correlation": [
     {
-      "sector_a": "ETF",
-      "sector_b": "電子代工",
+      "sector_a": "電子代工",
+      "sector_b": "ETF",
       "correlation": 0.82,
       "direction": "同向"
     },
@@ -7772,20 +7772,20 @@
       "direction": "同向"
     },
     {
-      "sector_a": "航空",
-      "sector_b": "金融",
+      "sector_a": "金融",
+      "sector_b": "航空",
       "correlation": 0.79,
       "direction": "同向"
     },
     {
-      "sector_a": "航空",
-      "sector_b": "鋼鐵",
+      "sector_a": "鋼鐵",
+      "sector_b": "航空",
       "correlation": 0.66,
       "direction": "同向"
     },
     {
-      "sector_a": "航空",
-      "sector_b": "ETF",
+      "sector_a": "電子代工",
+      "sector_b": "航空",
       "correlation": 0.66,
       "direction": "同向"
     }
