@@ -1,0 +1,112 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/laiyanlong/tw-stocks-daily-report/main/schemas/data.schema.json",
+  "$schemaVersion": "1.0.0",
+  "title": "TW Stocks Daily Report — Dashboard Data",
+  "description": "Aggregate dashboard payload consumed by the DappGo TW Stocks mobile app and web viewer.",
+  "type": "object",
+  "required": ["last_updated", "tickers", "ticker_data", "sector_rotation"],
+  "additionalProperties": true,
+
+  "properties": {
+    "last_updated": {
+      "type": "string",
+      "description": "Date of this snapshot (YYYY-MM-DD)."
+    },
+    "tickers": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^[0-9]{4}$" }
+    },
+    "ticker_data": {
+      "type": "object",
+      "description": "Map of ticker → analysis dict",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "symbol": { "type": "string" },
+          "name": { "type": "string" },
+          "price_change_pct": { "type": "number" },
+          "indicators": {
+            "type": "object",
+            "properties": {
+              "latest_close": { "type": ["number", "null"] },
+              "ma_5":   { "type": ["number", "null"] },
+              "ma_10":  { "type": ["number", "null"] },
+              "ma_20":  { "type": ["number", "null"] },
+              "ma_60":  { "type": ["number", "null"] },
+              "ma_120": { "type": ["number", "null"] },
+              "rsi_14": { "type": ["number", "null"] },
+              "macd": {
+                "type": "object",
+                "properties": {
+                  "macd":   { "type": ["number", "null"] },
+                  "signal": { "type": ["number", "null"] },
+                  "hist":   { "type": ["number", "null"] }
+                }
+              },
+              "kd": {
+                "type": "object",
+                "properties": {
+                  "k": { "type": ["number", "null"] },
+                  "d": { "type": ["number", "null"] }
+                }
+              },
+              "bollinger": {
+                "type": "object",
+                "properties": {
+                  "upper":     { "type": ["number", "null"] },
+                  "mid":       { "type": ["number", "null"] },
+                  "lower":     { "type": ["number", "null"] },
+                  "bandwidth": { "type": ["number", "null"] }
+                }
+              },
+              "hv_20":         { "type": ["number", "null"] },
+              "volume_today":  { "type": ["number", "null"] },
+              "volume_5d_avg": { "type": ["number", "null"] }
+            }
+          },
+          "chip": { "type": "object" },
+          "signals": {
+            "type": "object",
+            "properties": {
+              "trend_label":     { "type": "string" },
+              "momentum_label":  { "type": "string" },
+              "volume_label":    { "type": "string" },
+              "chip_label":      { "type": "string" },
+              "verdict":         { "type": "string", "enum": ["BUY","HOLD","WATCH","AVOID","SELL"] },
+              "verdict_reason":  { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "sector_rotation": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "tickers":              { "type": "array", "items": { "type": "string" } },
+          "avg_change_pct":       { "type": "number" },
+          "top_gainer":           { "type": "object" },
+          "top_loser":            { "type": "object" },
+          "avg_rsi":              { "type": ["number", "null"] },
+          "foreign_net_5d_total": { "type": "integer" },
+          "verdict":              { "type": "string", "enum": ["HOT","WARM","NEUTRAL","COOL","COLD"] },
+          "verdict_reason":       { "type": "string" }
+        }
+      }
+    },
+    "sector_correlation": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "sector_a":    { "type": "string" },
+          "sector_b":    { "type": "string" },
+          "correlation": { "type": "number" },
+          "direction":   { "type": "string" }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+name: Schema Check
+
+on:
+  push:
+    paths:
+      - 'dashboard/data.json'
+      - 'schemas/*.schema.json'
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install ajv-cli
+        run: npm install -g ajv-cli ajv-formats
+      - name: Validate data.json
+        run: |
+          if [ -f dashboard/data.json ]; then
+            ajv validate \
+              --spec=draft2020 \
+              --strict=false \
+              -s schemas/data.schema.json \
+              -d dashboard/data.json \
+              --all-errors --verbose
+          else
+            echo "dashboard/data.json missing — skip"
+          fi

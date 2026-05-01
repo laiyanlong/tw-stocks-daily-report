@@ -1,0 +1,25 @@
+name: Guard — no Python
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  guard:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Reject Python files
+        run: |
+          FORBIDDEN=$(git ls-files \
+            '*.py' 'pyproject.toml' 'requirements*.txt' 'setup.py' \
+            'setup.cfg' 'Pipfile' 'poetry.lock' \
+            | grep -v '^.github/' || true)
+          if [ -n "$FORBIDDEN" ]; then
+            echo "::error::Python source files are not allowed in this public data repo."
+            echo "Engine code lives in tw-stocks-core (private). These must be removed:"
+            echo "$FORBIDDEN"
+            exit 1
+          fi
+          echo "✓ No Python source detected."

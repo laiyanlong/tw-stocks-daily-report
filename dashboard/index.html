@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TW Stocks Daily Report — Dashboard</title>
+<meta name="description" content="台股每日策略報告 + AI 解讀，免費公開。">
+<style>
+  :root {
+    --bg: #0f172a; --panel: #152036; --text: #e2e8f0; --text-mute: #94a3b8;
+    --accent: #10b981; --border: #2a3550; --gold: #fbbf24;
+    --pos: #34d399; --neg: #fca5a5; --warn: #fbbf24;
+  }
+  * { box-sizing: border-box }
+  body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+         background: var(--bg); color: var(--text); line-height: 1.6; }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 24px 16px; }
+  h1 { font-size: 1.5rem; margin: 0 0 .25rem; }
+  h2 { font-size: 1.1rem; border-bottom: 1px solid var(--border); padding-bottom: .25rem; margin-top: 1.5rem; }
+  .sub { color: var(--text-mute); font-size: .9rem; }
+  .panel { background: var(--panel); border: 1px solid var(--border); border-radius: 12px; padding: 16px; margin: 16px 0; }
+  .status { color: var(--text-mute); font-size: .85rem; margin: 8px 0; }
+  .status.err { color: var(--neg); }
+  table { width: 100%; border-collapse: collapse; font-size: .9rem; }
+  th, td { padding: .4rem .5rem; text-align: left; border-bottom: 1px solid var(--border); }
+  th { color: var(--text-mute); font-weight: 500; }
+  td.num { text-align: right; font-family: ui-monospace, monospace; }
+  .pos { color: var(--pos) }   .neg { color: var(--neg) }
+  .verdict-HOT  { color: #f87171; font-weight: 700; }
+  .verdict-WARM { color: #fbbf24; font-weight: 700; }
+  .verdict-NEUTRAL { color: var(--text-mute); }
+  .verdict-COOL { color: #60a5fa; }
+  .verdict-COLD { color: #818cf8; font-weight: 700; }
+  footer { margin-top: 32px; color: var(--text-mute); font-size: .8rem; text-align: center; }
+  footer a { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>📊 台股策略日報</h1>
+  <p class="sub">FinMind + Gemini · 每個交易日 14:00 (GMT+8) 自動更新</p>
+
+  <section class="panel">
+    <h2 id="sector-h">🌐 產業板塊輪動</h2>
+    <div id="sector-status" class="status">載入中…</div>
+    <div id="sector-body"></div>
+  </section>
+
+  <section class="panel">
+    <h2>📋 個股訊號</h2>
+    <div id="ticker-status" class="status">載入中…</div>
+    <table id="ticker-table" hidden>
+      <thead>
+        <tr><th>代號</th><th>名稱</th><th class="num">收盤</th><th class="num">漲跌</th>
+            <th>RSI</th><th>趨勢</th><th>動能</th><th>判斷</th></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <footer>
+    Data 來源: FinMind + TWSE · AI: Google Gemini ·
+    <a href="https://github.com/laiyanlong/tw-stocks-daily-report">GitHub</a> ·
+    Powered by <a href="https://dappgo.com">DappGo</a>
+    <br><small>過去績效不保證未來結果。本資料僅供參考，不構成投資建議。</small>
+  </footer>
+</div>
+
+<script>
+const DATA_URL = 'data.json';
+
+(async function init() {
+  try {
+    const r = await fetch(DATA_URL, { cache: 'no-cache' });
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    const d = await r.json();
+    renderSectors(d.sector_rotation || {});
+    renderTickers(d.ticker_data || {});
+    document.getElementById('sector-h').innerHTML += ' <span class="sub">(' + d.last_updated + ')</span>';
+  } catch (e) {
+    document.getElementById('sector-status').textContent = '無法載入資料：' + e.message;
+    document.getElementById('sector-status').classList.add('err');
+    document.getElementById('ticker-status').textContent = '—';
+  }
+})();
+
+function renderSectors(by_sector) {
+  const order = ['HOT','WARM','NEUTRAL','COOL','COLD'];
+  const sorted = Object.entries(by_sector).sort((a,b)=>order.indexOf(a[1].verdict)-order.indexOf(b[1].verdict));
+  if (!sorted.length) {
+    document.getElementById('sector-status').textContent = '尚無產業輪動資料';
+    return;
+  }
+  const emoji = {HOT:'🔥', WARM:'🟢', NEUTRAL:'⚪', COOL:'🔵', COLD:'❄️'};
+  let html = `<table><thead><tr>
+    <th>板塊</th><th>熱度</th><th class="num">均漲跌</th>
+    <th>領漲</th><th>領跌</th><th class="num">5日外資(張)</th>
+  </tr></thead><tbody>`;
+  for (const [sec, s] of sorted) {
+    const chg = s.avg_change_pct || 0;
+    const chgCls = chg >= 0 ? 'pos' : 'neg';
+    html += `<tr>
+      <td><strong>${sec}</strong></td>
+      <td><span class="verdict-${s.verdict}">${emoji[s.verdict] || ''} ${s.verdict}</span></td>
+      <td class="num ${chgCls}">${chg >= 0 ? '+' : ''}${chg.toFixed(2)}%</td>
+      <td>${s.top_gainer.name} <span class="pos">${(s.top_gainer.change_pct).toFixed(1)}%</span></td>
+      <td>${s.top_loser.name} <span class="neg">${(s.top_loser.change_pct).toFixed(1)}%</span></td>
+      <td class="num">${(s.foreign_net_5d_total || 0).toLocaleString()}</td>
+    </tr>`;
+  }
+  html += `</tbody></table>`;
+  document.getElementById('sector-body').innerHTML = html;
+  document.getElementById('sector-status').remove();
+}
+
+function renderTickers(td) {
+  const rows = Object.values(td);
+  if (!rows.length) {
+    document.getElementById('ticker-status').textContent = '尚無資料';
+    return;
+  }
+  document.getElementById('ticker-status').remove();
+  document.getElementById('ticker-table').hidden = false;
+  const tbody = document.querySelector('#ticker-table tbody');
+  for (const r of rows) {
+    const ind = r.indicators || {};
+    const sig = r.signals || {};
+    const chg = r.price_change_pct || 0;
+    const chgCls = chg >= 0 ? 'pos' : 'neg';
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td><strong style="color:var(--gold)">${r.symbol}</strong></td>
+      <td>${r.name}</td>
+      <td class="num">$${ind.latest_close ? ind.latest_close.toFixed(2) : '—'}</td>
+      <td class="num ${chgCls}">${chg >= 0 ? '+' : ''}${chg.toFixed(2)}%</td>
+      <td>${ind.rsi_14 ? ind.rsi_14.toFixed(0) : '—'}</td>
+      <td>${sig.trend_label || '—'}</td>
+      <td>${sig.momentum_label || '—'}</td>
+      <td><strong>${sig.verdict || '—'}</strong></td>
+    `;
+    tbody.appendChild(tr);
+  }
+}
+</script>
+</body>
+</html>
