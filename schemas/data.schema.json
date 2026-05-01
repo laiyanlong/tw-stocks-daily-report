@@ -26,6 +26,21 @@
           "symbol": { "type": "string" },
           "name": { "type": "string" },
           "price_change_pct": { "type": "number" },
+          "price_history": {
+            "type": "array",
+            "description": "Last ~60 trading days of OHLCV for chart rendering.",
+            "items": {
+              "type": "object",
+              "required": ["date", "close"],
+              "properties": {
+                "date":   { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+                "close":  { "type": "number" },
+                "high":   { "type": "number" },
+                "low":    { "type": "number" },
+                "volume": { "type": "integer" }
+              }
+            }
+          },
           "indicators": {
             "type": "object",
             "properties": {
@@ -105,6 +120,39 @@
           "sector_b":    { "type": "string" },
           "correlation": { "type": "number" },
           "direction":   { "type": "string" }
+        }
+      }
+    },
+    "recommendations": {
+      "type": "array",
+      "description": "Engine-curated buy candidates (low-risk + below MA + momentum-turning). Up to 3.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "symbol":       { "type": "string" },
+          "name":         { "type": "string" },
+          "reason":       { "type": "string" },
+          "score":        { "type": "integer" },
+          "signals":      { "type": "array", "items": { "type": "string" } },
+          "latest_close": { "type": "number" },
+          "rsi":          { "type": ["number", "null"] },
+          "hv_20":        { "type": ["number", "null"] }
+        }
+      }
+    },
+    "cautions": {
+      "type": "array",
+      "description": "Warning list — verdicts SELL/AVOID, or RSI≥70 with chip distributing. Up to 3.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "symbol":       { "type": "string" },
+          "name":         { "type": "string" },
+          "reason":       { "type": "string" },
+          "verdict":      { "type": "string" },
+          "signals":      { "type": "array", "items": { "type": "string" } },
+          "latest_close": { "type": "number" },
+          "rsi":          { "type": ["number", "null"] }
         }
       }
     }
