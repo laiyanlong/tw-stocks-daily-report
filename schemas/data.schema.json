@@ -81,6 +81,37 @@
             }
           },
           "chip": { "type": "object" },
+          "news": {
+            "type": "array",
+            "description": "Recent FinMind news headlines for this ticker (best-effort, may be empty).",
+            "items": {
+              "type": "object",
+              "properties": {
+                "title":   { "type": "string" },
+                "url":     { "type": "string" },
+                "source":  { "type": "string" },
+                "date":    { "type": "string" },
+                "summary": { "type": "string" }
+              }
+            }
+          },
+          "announcements": {
+            "type": "array",
+            "description": "TWSE MOPS public announcements for this ticker (best-effort, may be empty).",
+            "items": {
+              "type": "object",
+              "properties": {
+                "title": { "type": "string" },
+                "url":   { "type": "string", "format": "uri" },
+                "date":  { "type": "string", "format": "date" },
+                "type":  { "type": "string" }
+              }
+            }
+          },
+          "news_commentary": {
+            "type": "string",
+            "description": "AI-generated 2-3 sentence Traditional Chinese summary of recent news. Only present when AI generated one."
+          },
           "signals": {
             "type": "object",
             "properties": {
