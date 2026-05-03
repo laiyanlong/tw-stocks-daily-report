@@ -41,7 +41,7 @@ schemas/                       JSON Schema 定義
 App 透過 jsDelivr 公開 CDN 取資料（避開 GitHub raw 的 cache header 限制）：
 
 ```
-https://cdn.jsdelivr.net/gh/laiyanlong/tw-stocks-daily-report@main/dashboard/data.json
+https://cdn.jsdelivr.net/gh/YanlongLai/tw-stocks-daily-report@main/dashboard/data.json
 ```
 
 ## 三 repo 協同
@@ -67,11 +67,11 @@ https://cdn.jsdelivr.net/gh/laiyanlong/tw-stocks-daily-report@main/dashboard/dat
 
 | Repo | Visibility | 用途 |
 |---|---|---|
-| [tw-stocks-core](https://github.com/laiyanlong/tw-stocks-core) | private | 引擎 — 每日跑分析 |
+| [tw-stocks-core](https://github.com/YanlongLai/tw-stocks-core) | private | 引擎 — 每日跑分析 |
 | **tw-stocks-daily-report** (本 repo) | public | 已發布報告 + JSON + 公開 viewer |
-| [dappgo-tw-stocks-app](https://github.com/laiyanlong/dappgo-tw-stocks-app) | private | iOS/iPadOS/macOS 行動 App |
+| [dappgo-tw-stocks-app](https://github.com/YanlongLai/dappgo-tw-stocks-app) | private | iOS/iPadOS/macOS 行動 App |
 
-姐妹產品：**DappGo Options** ([options-core](https://github.com/laiyanlong/options-core) · [options-daily-report](https://github.com/laiyanlong/options-daily-report) · [dappgo-options-app](https://github.com/laiyanlong/dappgo-options-app)) — 三 repo 架構完全相同。
+姐妹產品：**DappGo Options** ([options-core](https://github.com/YanlongLai/options-core) · [options-daily-report](https://github.com/YanlongLai/options-daily-report) · [dappgo-options-app](https://github.com/YanlongLai/dappgo-options-app)) — 三 repo 架構完全相同。
 
 > **Schema 變動**請先在本 repo 更新 `schemas/data.schema.json`（CI 會擋住格式錯誤的 push），再依序部署 engine、app。
 
