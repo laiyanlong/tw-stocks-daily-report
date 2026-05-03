@@ -1,19 +1,56 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="zh-Hant" data-theme="dark">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>TW Stocks Daily Report — Dashboard</title>
-<meta name="description" content="台股每日策略報告 + AI 解讀，免費公開。">
+<title>台股策略日報 — DappGo TW Stocks Daily Report</title>
+<meta name="description" content="台股每日策略報告 + AI 解讀，免費公開。技術指標、三大法人籌碼、產業輪動、AI 分析。">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#10b981">
+
+<!-- Open Graph / Twitter -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="台股策略日報 — DappGo">
+<meta property="og:description" content="台股每日策略報告 + AI 解讀，免費公開。">
+<meta property="og:url" content="https://laiyanlong.github.io/tw-stocks-daily-report/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="台股策略日報 — DappGo">
+<meta name="twitter:description" content="台股每日策略報告 + AI 解讀，免費公開。">
+
+<link rel="canonical" href="https://laiyanlong.github.io/tw-stocks-daily-report/">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "TW Stocks Daily Report",
+  "url": "https://laiyanlong.github.io/tw-stocks-daily-report/",
+  "description": "Daily Taiwan stock strategy reports with AI commentary.",
+  "inLanguage": "zh-Hant",
+  "publisher": { "@type": "Organization", "name": "DappGo" }
+}
+</script>
+
 <style>
-  :root {
+  :root[data-theme="dark"] {
     --bg: #0f172a; --panel: #152036; --text: #e2e8f0; --text-mute: #94a3b8;
     --accent: #10b981; --border: #2a3550; --gold: #fbbf24;
     --pos: #34d399; --neg: #fca5a5; --warn: #fbbf24;
+    --btn-bg: #0b1220;
+  }
+  :root[data-theme="light"] {
+    --bg: #f8fafc; --panel: #ffffff; --text: #0f172a; --text-mute: #64748b;
+    --accent: #059669; --border: #e2e8f0; --gold: #d97706;
+    --pos: #059669; --neg: #dc2626; --warn: #d97706;
+    --btn-bg: #f1f5f9;
   }
   * { box-sizing: border-box }
-  body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-         background: var(--bg); color: var(--text); line-height: 1.6; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: var(--bg); color: var(--text); line-height: 1.6;
+    transition: background .2s, color .2s;
+  }
   .wrap { max-width: 960px; margin: 0 auto; padding: 24px 16px; }
   h1 { font-size: 1.5rem; margin: 0 0 .25rem; }
   h2 { font-size: 1.1rem; border-bottom: 1px solid var(--border); padding-bottom: .25rem; margin-top: 1.5rem; }
@@ -31,14 +68,70 @@
   .verdict-NEUTRAL { color: var(--text-mute); }
   .verdict-COOL { color: #60a5fa; }
   .verdict-COLD { color: #818cf8; font-weight: 700; }
+
+  /* Toolbar */
+  .toolbar {
+    display: flex; flex-wrap: wrap; gap: 8px; align-items: center;
+    margin-top: 12px;
+  }
+  .toolbar .spacer { flex: 1 }
+  .btn, .toolbar select {
+    background: var(--btn-bg); color: var(--text);
+    border: 1px solid var(--border); border-radius: 6px;
+    padding: 6px 10px; font-size: .85rem; cursor: pointer;
+    font-family: inherit;
+  }
+  .btn:hover { border-color: var(--accent); }
+  .btn:focus, .toolbar select:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+  .toolbar label { color: var(--text-mute); font-size: .8rem; }
+
   footer { margin-top: 32px; color: var(--text-mute); font-size: .8rem; text-align: center; }
   footer a { color: var(--accent); }
+
+  /* Responsive table on mobile — cards */
+  @media (max-width: 640px) {
+    .wrap { padding: 16px 10px; }
+    .responsive-table thead { display: none; }
+    .responsive-table, .responsive-table tbody, .responsive-table tr, .responsive-table td {
+      display: block; width: 100%;
+    }
+    .responsive-table tr {
+      border: 1px solid var(--border); border-radius: 8px;
+      margin-bottom: 8px; padding: 8px 10px;
+    }
+    .responsive-table td {
+      border: 0; padding: 3px 0; text-align: left !important;
+      display: flex; justify-content: space-between; gap: 12px;
+    }
+    .responsive-table td::before {
+      content: attr(data-label); color: var(--text-mute); font-size: .8rem;
+    }
+    .responsive-table td:first-child { border-bottom: 1px solid var(--border); margin-bottom: 4px; padding-bottom: 4px; }
+    .responsive-table td:first-child::before { content: ''; }
+  }
 </style>
 </head>
 <body>
 <div class="wrap">
   <h1>📊 台股策略日報</h1>
   <p class="sub">FinMind + Gemini · 每個交易日 14:00 (GMT+8) 自動更新</p>
+
+  <div class="toolbar" role="toolbar" aria-label="檢視工具">
+    <label for="ticker-filter">板塊</label>
+    <select id="sector-filter" aria-label="篩選板塊"><option value="ALL">全部</option></select>
+    <label for="verdict-filter">判斷</label>
+    <select id="verdict-filter" aria-label="篩選判斷">
+      <option value="ALL">全部</option>
+      <option value="BUY">BUY</option>
+      <option value="HOLD">HOLD</option>
+      <option value="WATCH">WATCH</option>
+      <option value="AVOID">AVOID</option>
+      <option value="SELL">SELL</option>
+    </select>
+    <span class="spacer"></span>
+    <button class="btn" id="share-btn" type="button" aria-label="分享">🔗 分享</button>
+    <button class="btn" id="theme-btn" type="button" aria-label="切換主題">🌓 主題</button>
+  </div>
 
   <section class="panel">
     <h2 id="sector-h">🌐 產業板塊輪動</h2>
@@ -49,7 +142,7 @@
   <section class="panel">
     <h2>📋 個股訊號</h2>
     <div id="ticker-status" class="status">載入中…</div>
-    <table id="ticker-table" hidden>
+    <table id="ticker-table" class="responsive-table" hidden>
       <thead>
         <tr><th>代號</th><th>名稱</th><th class="num">收盤</th><th class="num">漲跌</th>
             <th>RSI</th><th>趨勢</th><th>動能</th><th>判斷</th></tr>
@@ -68,15 +161,59 @@
 
 <script>
 const DATA_URL = 'data.json';
+const THEME_KEY = 'tw-report-theme';
 
+// ── Theme ──────────────────────────────────────────────
+function applyTheme(t) {
+  document.documentElement.setAttribute('data-theme', t);
+  try { localStorage.setItem(THEME_KEY, t); } catch (_) {}
+}
+(function initTheme() {
+  let saved;
+  try { saved = localStorage.getItem(THEME_KEY); } catch (_) {}
+  if (!saved) {
+    saved = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+  }
+  applyTheme(saved);
+})();
+document.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('theme-btn').addEventListener('click', () => {
+    const cur = document.documentElement.getAttribute('data-theme');
+    applyTheme(cur === 'dark' ? 'light' : 'dark');
+  });
+  document.getElementById('share-btn').addEventListener('click', shareReport);
+});
+
+async function shareReport() {
+  const url = window.location.href;
+  const title = document.title;
+  if (navigator.share) {
+    try { await navigator.share({ title, url }); } catch (_) {}
+    return;
+  }
+  try {
+    await navigator.clipboard.writeText(url);
+    const b = document.getElementById('share-btn');
+    const orig = b.textContent;
+    b.textContent = '✓ 已複製';
+    setTimeout(() => { b.textContent = orig; }, 1500);
+  } catch (_) {
+    window.prompt('複製連結：', url);
+  }
+}
+
+// ── State ──────────────────────────────────────────────
+const state = { data: null, sector: 'ALL', verdict: 'ALL' };
+
+// ── Init ───────────────────────────────────────────────
 (async function init() {
   try {
     const r = await fetch(DATA_URL, { cache: 'no-cache' });
     if (!r.ok) throw new Error('HTTP ' + r.status);
-    const d = await r.json();
-    renderSectors(d.sector_rotation || {});
-    renderTickers(d.ticker_data || {});
-    document.getElementById('sector-h').innerHTML += ' <span class="sub">(' + d.last_updated + ')</span>';
+    state.data = await r.json();
+    populateSectorFilter(state.data);
+    renderAll();
+    document.getElementById('sector-h').innerHTML += ' <span class="sub">(' + state.data.last_updated + ')</span>';
   } catch (e) {
     document.getElementById('sector-status').textContent = '無法載入資料：' + e.message;
     document.getElementById('sector-status').classList.add('err');
@@ -84,44 +221,84 @@ const DATA_URL = 'data.json';
   }
 })();
 
+function populateSectorFilter(d) {
+  const sel = document.getElementById('sector-filter');
+  for (const s of Object.keys(d.sector_rotation || {})) {
+    const opt = document.createElement('option');
+    opt.value = s; opt.textContent = s;
+    sel.appendChild(opt);
+  }
+  sel.addEventListener('change', e => { state.sector = e.target.value; renderAll(); });
+  document.getElementById('verdict-filter').addEventListener('change', e => {
+    state.verdict = e.target.value; renderAll();
+  });
+}
+
+function renderAll() {
+  renderSectors(state.data.sector_rotation || {});
+  renderTickers(state.data.ticker_data || {}, state.data.sector_rotation || {});
+}
+
 function renderSectors(by_sector) {
   const order = ['HOT','WARM','NEUTRAL','COOL','COLD'];
-  const sorted = Object.entries(by_sector).sort((a,b)=>order.indexOf(a[1].verdict)-order.indexOf(b[1].verdict));
+  const filtered = state.sector === 'ALL'
+    ? Object.entries(by_sector)
+    : Object.entries(by_sector).filter(([s]) => s === state.sector);
+  const sorted = filtered.sort((a,b)=>order.indexOf(a[1].verdict)-order.indexOf(b[1].verdict));
+  const statusEl = document.getElementById('sector-status');
   if (!sorted.length) {
-    document.getElementById('sector-status').textContent = '尚無產業輪動資料';
+    statusEl.textContent = '尚無產業輪動資料';
+    document.getElementById('sector-body').innerHTML = '';
     return;
   }
+  if (statusEl) statusEl.textContent = '';
   const emoji = {HOT:'🔥', WARM:'🟢', NEUTRAL:'⚪', COOL:'🔵', COLD:'❄️'};
-  let html = `<table><thead><tr>
+  let html = `<table class="responsive-table"><thead><tr>
     <th>板塊</th><th>熱度</th><th class="num">均漲跌</th>
     <th>領漲</th><th>領跌</th><th class="num">5日外資(張)</th>
   </tr></thead><tbody>`;
   for (const [sec, s] of sorted) {
     const chg = s.avg_change_pct || 0;
     const chgCls = chg >= 0 ? 'pos' : 'neg';
+    const tg = s.top_gainer || {}; const tl = s.top_loser || {};
     html += `<tr>
-      <td><strong>${sec}</strong></td>
-      <td><span class="verdict-${s.verdict}">${emoji[s.verdict] || ''} ${s.verdict}</span></td>
-      <td class="num ${chgCls}">${chg >= 0 ? '+' : ''}${chg.toFixed(2)}%</td>
-      <td>${s.top_gainer.name} <span class="pos">${(s.top_gainer.change_pct).toFixed(1)}%</span></td>
-      <td>${s.top_loser.name} <span class="neg">${(s.top_loser.change_pct).toFixed(1)}%</span></td>
-      <td class="num">${(s.foreign_net_5d_total || 0).toLocaleString()}</td>
+      <td data-label="板塊"><strong>${sec}</strong></td>
+      <td data-label="熱度"><span class="verdict-${s.verdict}">${emoji[s.verdict] || ''} ${s.verdict}</span></td>
+      <td class="num ${chgCls}" data-label="均漲跌">${chg >= 0 ? '+' : ''}${chg.toFixed(2)}%</td>
+      <td data-label="領漲">${tg.name || '—'} <span class="pos">${tg.change_pct != null ? tg.change_pct.toFixed(1)+'%' : ''}</span></td>
+      <td data-label="領跌">${tl.name || '—'} <span class="neg">${tl.change_pct != null ? tl.change_pct.toFixed(1)+'%' : ''}</span></td>
+      <td class="num" data-label="5日外資">${(s.foreign_net_5d_total || 0).toLocaleString()}</td>
     </tr>`;
   }
   html += `</tbody></table>`;
   document.getElementById('sector-body').innerHTML = html;
-  document.getElementById('sector-status').remove();
 }
 
-function renderTickers(td) {
-  const rows = Object.values(td);
+function renderTickers(td, sectorMap) {
+  // Build ticker → sector lookup so we can filter by sector dropdown.
+  const tickerSector = {};
+  for (const [secName, sec] of Object.entries(sectorMap)) {
+    for (const t of (sec.tickers || [])) tickerSector[t] = secName;
+  }
+  let rows = Object.values(td);
+  if (state.sector !== 'ALL') {
+    rows = rows.filter(r => tickerSector[r.symbol] === state.sector);
+  }
+  if (state.verdict !== 'ALL') {
+    rows = rows.filter(r => (r.signals || {}).verdict === state.verdict);
+  }
+  const statusEl = document.getElementById('ticker-status');
+  const tbl = document.getElementById('ticker-table');
+  const tbody = tbl.querySelector('tbody');
+  tbody.innerHTML = '';
   if (!rows.length) {
-    document.getElementById('ticker-status').textContent = '尚無資料';
+    statusEl.textContent = '無符合條件的個股';
+    statusEl.classList.remove('err');
+    tbl.hidden = true;
     return;
   }
-  document.getElementById('ticker-status').remove();
-  document.getElementById('ticker-table').hidden = false;
-  const tbody = document.querySelector('#ticker-table tbody');
+  statusEl.textContent = `共 ${rows.length} 檔`;
+  tbl.hidden = false;
   for (const r of rows) {
     const ind = r.indicators || {};
     const sig = r.signals || {};
@@ -129,14 +306,14 @@ function renderTickers(td) {
     const chgCls = chg >= 0 ? 'pos' : 'neg';
     const tr = document.createElement('tr');
     tr.innerHTML = `
-      <td><strong style="color:var(--gold)">${r.symbol}</strong></td>
-      <td>${r.name}</td>
-      <td class="num">$${ind.latest_close ? ind.latest_close.toFixed(2) : '—'}</td>
-      <td class="num ${chgCls}">${chg >= 0 ? '+' : ''}${chg.toFixed(2)}%</td>
-      <td>${ind.rsi_14 ? ind.rsi_14.toFixed(0) : '—'}</td>
-      <td>${sig.trend_label || '—'}</td>
-      <td>${sig.momentum_label || '—'}</td>
-      <td><strong>${sig.verdict || '—'}</strong></td>
+      <td data-label="代號"><strong style="color:var(--gold)">${r.symbol}</strong></td>
+      <td data-label="名稱">${r.name || ''}</td>
+      <td class="num" data-label="收盤">$${ind.latest_close ? ind.latest_close.toFixed(2) : '—'}</td>
+      <td class="num ${chgCls}" data-label="漲跌">${chg >= 0 ? '+' : ''}${chg.toFixed(2)}%</td>
+      <td data-label="RSI">${ind.rsi_14 ? ind.rsi_14.toFixed(0) : '—'}</td>
+      <td data-label="趨勢">${sig.trend_label || '—'}</td>
+      <td data-label="動能">${sig.momentum_label || '—'}</td>
+      <td data-label="判斷"><strong>${sig.verdict || '—'}</strong></td>
     `;
     tbody.appendChild(tr);
   }
