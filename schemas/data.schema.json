@@ -28,7 +28,7 @@
           "price_change_pct": { "type": "number" },
           "price_history": {
             "type": "array",
-            "description": "Last ~60 trading days of OHLCV for chart rendering.",
+            "description": "Last ~250 trading days of OHLCV for chart rendering + client-side MA60/MA200 + timeframe toggles.",
             "items": {
               "type": "object",
               "required": ["date", "close"],
