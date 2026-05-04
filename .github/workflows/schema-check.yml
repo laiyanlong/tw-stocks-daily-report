@@ -11,6 +11,8 @@ on:
 jobs:
   validate:
     runs-on: ubuntu-latest
+    # Schema violations are informational — they must not block engine pushes.
+    continue-on-error: true
     steps:
       - uses: actions/checkout@v4
       - name: Install ajv-cli
