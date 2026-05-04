@@ -15,7 +15,7 @@
     },
     "tickers": {
       "type": "array",
-      "items": { "type": "string", "pattern": "^[0-9]{4}$" }
+      "items": { "type": "string", "pattern": "^[0-9]{4,5}$" }
     },
     "ticker_data": {
       "type": "object",
