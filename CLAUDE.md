@@ -1,7 +1,24 @@
-# Project context for Claude Code
+# tw-stocks-daily-report
 
-You are working on **tw-stocks-daily-report** — the **public data repository**
-for the DappGo TW Stocks mobile app. Sibling to `options-daily-report`.
+> **Part of the [DappGo Stocks family](https://github.com/YanlongLai/dappgo-stocks-meta) (14 sibling repos).**
+> If you've never worked on this family before, read `~/git/dappgo-stocks-meta/CLAUDE.md` first — it's the canonical entry point.
+
+## Family quick links
+- Repo map: `~/git/dappgo-stocks-meta/docs/REPO_MAP.md` — what each repo does
+- Dependency flow: `~/git/dappgo-stocks-meta/docs/DEPENDENCY_FLOW.md` — when changing X, also touch Y
+- Architecture: `~/git/dappgo-stocks-meta/docs/ARCHITECTURE.md` — data flow + diagrams
+- Conventions: `~/git/dappgo-stocks-meta/docs/CONVENTIONS.md` — TS / Python / commit standards
+
+## This repo's role
+**Tier 2** | **Data-only / machine-emitted** | Public archive of generated artifacts for the DappGo TW Stocks mobile app.
+
+- **Inputs**: nightly engine push from `~/git/tw-stocks-core` (Tier 1 Python engine).
+- **Outputs**: jsDelivr CDN consumption by `~/git/dappgo-tw-stocks-app` (Tier 3) and `~/git/dappgo-stocks-mcp` (Tier 4).
+- **When to touch**: **NEVER manually**. Reports and `dashboard/data.json` are emitted by the engine. If you find yourself wanting to edit content here, you almost certainly want `~/git/tw-stocks-core` instead.
+
+## Sibling repos commonly edited together
+- `~/git/tw-stocks-core` — the engine producing the data in this repo.
+- `~/git/dappgo-tw-stocks-app` — the consumer mobile app.
 
 ## What this repo is
 
@@ -12,8 +29,7 @@ A read-mostly archive of **generated artifacts**:
 
 ## What this repo is NOT
 
-- **Not** a place for Python source code. The engine lives in a separate
-  private repo (`tw-stocks-core`).
+- **Not** a place for Python source code. The engine lives in `~/git/tw-stocks-core`.
 - **Not** for contributors modifying reports. They're auto-generated.
 
 ## Before committing
@@ -26,26 +42,3 @@ A read-mostly archive of **generated artifacts**:
 
 User's primary language is 繁體中文. Respond in 繁體中文 unless the user
 writes in English. Code / docs in English.
-
-
-## DappGo Stocks family
-
-This repo is part of the **DappGo Stocks** family. The coordination repo
-[`dappgo-stocks-meta`](https://github.com/YanlongLai/dappgo-stocks-meta)
-holds:
-
-- [STACK.md](https://github.com/YanlongLai/dappgo-stocks-meta/blob/main/STACK.md) — TLDR of all 12 repos at a glance
-- [CLAUDE.md](https://github.com/YanlongLai/dappgo-stocks-meta/blob/main/CLAUDE.md) — entry point for fresh Claude Code sessions
-- [docs/ARCHITECTURE.md](https://github.com/YanlongLai/dappgo-stocks-meta/blob/main/docs/ARCHITECTURE.md) — full data flow diagram
-- [docs/CONVENTIONS.md](https://github.com/YanlongLai/dappgo-stocks-meta/blob/main/docs/CONVENTIONS.md) — TS / Python / commit / a11y standards
-- [docs/UI_DESIGN_SYSTEM.md](https://github.com/YanlongLai/dappgo-stocks-meta/blob/main/docs/UI_DESIGN_SYSTEM.md) — design tokens + sync rules
-- [docs/LAYOUT_PATTERNS.md](https://github.com/YanlongLai/dappgo-stocks-meta/blob/main/docs/LAYOUT_PATTERNS.md) — standard screen patterns (loading/error/empty/refresh)
-- [docs/WORKFLOW.md](https://github.com/YanlongLai/dappgo-stocks-meta/blob/main/docs/WORKFLOW.md) — multi-repo task recipes
-- [docs/INTEGRATION_STRATEGY.md](https://github.com/YanlongLai/dappgo-stocks-meta/blob/main/docs/INTEGRATION_STRATEGY.md) — 5-rung migration ladder for shared code
-- [docs/RELEASE.md](https://github.com/YanlongLai/dappgo-stocks-meta/blob/main/docs/RELEASE.md) — release runbook
-- [docs/ONBOARDING.md](https://github.com/YanlongLai/dappgo-stocks-meta/blob/main/docs/ONBOARDING.md) — new dev box setup
-- [docs/DEPENDENCY_FLOW.md](https://github.com/YanlongLai/dappgo-stocks-meta/blob/main/docs/DEPENDENCY_FLOW.md) — "when changing X, what else needs updating"
-
-Cross-repo scripts at `~/git/dappgo-stocks-meta/scripts/` (status-all,
-pull-all, verify-apps, deploy-mobile, run-engines, sync-shared, sync-ui,
-drift-check, clone-all).
